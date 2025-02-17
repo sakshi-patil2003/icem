@@ -1,99 +1,102 @@
 import React from "react";
 import Slider from "react-slick"; // Importing react-slick
-import rahulImage from "../../assets/images/user.png";
-import priyaImage from "../../assets/images/user.png";
-import ravi1Image from "../../assets/images/user.png";
-import nehaImage from "../../assets/images/user.png";
-import ravi2Image from "../../assets/images/user.png";
-import aishaImage from "../../assets/images/user.png";
+
+// Image Imports
+import vikramImage from "../../assets/images/user.png";
+import simranImage from "../../assets/images/user.png";
+import arjunImage from "../../assets/images/user.png";
+import meeraImage from "../../assets/images/user.png";
+import karanImage from "../../assets/images/user.png";
+import nishaImage from "../../assets/images/user.png";
+import aartiImage from "../../assets/images/user.png";
 import newImage from "../../assets/images/testimony.webp"; // New Image for the right section
 
 function MechTestimonials() {
   const testimonials = [
     {
-      name: "Rahul Sharma - Junior Developer",
-      department: "Computer Science",
+      name: "Vikram Singh - Junior Mechanical Engineer",
+      department: "Mechanical Engineering",
       year: "Batch-24",
-      text: '"ICEM provided me with the skills and knowledge I needed to succeed in the tech world. The faculty and resources are top-notch!"',
-      image: rahulImage,
+      text: '"ICEM provided me with the skills and knowledge I needed to succeed in the engineering world. The faculty and resources are top-notch!"',
+      image: vikramImage,
     },
     {
-      name: "Priya Deshmukh - Software Engineer Trainee",
-      department: "Computer Science",
+      name: "Simran Kaur - Mechanical Engineer Trainee",
+      department: "Mechanical Engineering",
       year: "Batch-23",
-      text: '"The exposure to real-world projects and internships helped me land a job at a leading tech firm straight out of college! The curriculum is well-structured."',
-      image: priyaImage,
+      text: '"The exposure to real-world projects and internships helped me land a job at a leading manufacturing firm straight out of college! The curriculum is well-structured."',
+      image: simranImage,
     },
     {
-      name: "Ravi Mehta - Junior Software Engineer",
-      department: "Computer Science",
+      name: "Arjun Rao - Junior Mechanical Engineer",
+      department: "Mechanical Engineering",
       year: "Batch-25",
       text: '"ICEM is a fantastic place to study, with the best infrastructure and an extremely supportive environment! From well-equipped labs to knowledgeable professors."',
-      image: ravi1Image,
+      image: arjunImage,
     },
     {
-      name: "Neha Joshi - Software Developer Intern",
-      department: "Computer Science",
+      name: "Meera Patel - Mechanical Engineering Intern",
+      department: "Mechanical Engineering",
       year: "Batch-24",
-      text: '"The practical experience I gained at ICEM really helped me adapt quickly in the tech industry! The focus on real-world applications and exposure to emerging technologies was invaluable."',
-      image: nehaImage,
+      text: '"The practical experience I gained at ICEM really helped me adapt quickly in the engineering industry! The focus on real-world applications and exposure to emerging technologies was invaluable."',
+      image: meeraImage,
     },
     {
-      name: "Ravi Kumar - Front-End Developer Intern",
-      department: "Computer Science",
-      year: "Batch-24",
-      text: '"I had access to top-tier resources and mentorship, making my learning journey smooth and enriching! ICEM\'s environment encouraged creativity and collaboration."',
-      image: ravi2Image,
-    },
-    {
-      name: "Aisha Ali - Junior Web Developer",
-      department: "Computer Science",
-      year: "Batch-25",
-      text: '"The real-world challenges and hands-on projects at ICEM were the highlight of my college life! The faculty ensures that we are always up-to-date with the latest industry trends."',
-      image: aishaImage,
-    },
-    {
-      name: "Rahul Sharma - Junior Developer",
-      department: "Computer Science",
-      year: "Batch-24",
-      text: '"ICEM provided me with the skills and knowledge I needed to succeed in the tech world. The faculty and resources are top-notch!"',
-      image: rahulImage,
-    },
-    {
-      name: "Priya Deshmukh - Software Engineer Trainee",
-      department: "Computer Science",
-      year: "Batch-23",
-      text: '"The exposure to real-world projects and internships helped me land a job at a leading tech firm straight out of college! The curriculum is well-structured."',
-      image: priyaImage,
-    },
-    {
-      name: "Ravi Mehta - Junior Software Engineer",
-      department: "Computer Science",
-      year: "Batch-25",
-      text: '"ICEM is a fantastic place to study, with the best infrastructure and an extremely supportive environment! From well-equipped labs to knowledgeable professors."',
-      image: ravi1Image,
-    },
-    {
-      name: "Neha Joshi - Software Developer Intern",
-      department: "Computer Science",
-      year: "Batch-24",
-      text: '"The practical experience I gained at ICEM really helped me adapt quickly in the tech industry! The focus on real-world applications and exposure to emerging technologies was invaluable."',
-      image: nehaImage,
-    },
-    {
-      name: "Ravi Kumar - Front-End Developer Intern",
-      department: "Computer Science",
+      name: "Karan Desai - CAD Design Intern",
+      department: "Mechanical Engineering",
       year: "Batch-24",
       text: '"I had access to top-tier resources and mentorship, making my learning journey smooth and enriching! ICEM\'s environment encouraged creativity and collaboration."',
-      image: ravi2Image,
+      image: karanImage,
     },
     {
-      name: "Natasha kapoor - Junior Web Developer",
-      department: "Computer Science",
+      name: "Nisha Gupta - Junior Design Engineer",
+      department: "Mechanical Engineering",
       year: "Batch-25",
       text: '"The real-world challenges and hands-on projects at ICEM were the highlight of my college life! The faculty ensures that we are always up-to-date with the latest industry trends."',
-      image: aishaImage,
+      image: nishaImage,
     },
+    {
+      name: "Aarti Sharma - Junior Mechanical Engineer",
+      department: "Mechanical Engineering",
+      year: "Batch-25",
+      text: '"The real-world challenges and hands-on projects at ICEM were the highlight of my college life! The faculty ensures that we are always up-to-date with the latest industry trends."',
+      image: aartiImage,
+    },
+    {
+        name: "Nisha Gupta - Junior Design Engineer",
+        department: "Mechanical Engineering",
+        year: "Batch-25",
+        text: '"The real-world challenges and hands-on projects at ICEM were the highlight of my college life! The faculty ensures that we are always up-to-date with the latest industry trends."',
+        image: nishaImage,
+      },
+      {
+        name: "Aarti Sharma - Junior Mechanical Engineer",
+        department: "Mechanical Engineering",
+        year: "Batch-25",
+        text: '"The real-world challenges and hands-on projects at ICEM were the highlight of my college life! The faculty ensures that we are always up-to-date with the latest industry trends."',
+        image: aartiImage,
+      },
+      {
+        name: "Nisha Gupta - Junior Design Engineer",
+        department: "Mechanical Engineering",
+        year: "Batch-25",
+        text: '"The real-world challenges and hands-on projects at ICEM were the highlight of my college life! The faculty ensures that we are always up-to-date with the latest industry trends."',
+        image: nishaImage,
+      },
+      {
+        name: "Aarti Sharma - Junior Mechanical Engineer",
+        department: "Mechanical Engineering",
+        year: "Batch-25",
+        text: '"The real-world challenges and hands-on projects at ICEM were the highlight of my college life! The faculty ensures that we are always up-to-date with the latest industry trends."',
+        image: aartiImage,
+      },
+      {
+        name: "Aarti Sharma - Junior Mechanical Engineer",
+        department: "Mechanical Engineering",
+        year: "Batch-25",
+        text: '"The real-world challenges and hands-on projects at ICEM were the highlight of my college life! The faculty ensures that we are always up-to-date with the latest industry trends."',
+        image: aartiImage,
+      },
   ];
 
   const settings = {
@@ -102,7 +105,7 @@ function MechTestimonials() {
     speed: 500,
     slidesToShow: 1, // Show 1 slide at a time (to ensure each slide holds 2 items)
     slidesToScroll: 1,
-    vertical: true, // Enable vertical scrolling
+    vertical: false, // Change to false for horizontal scrolling
     centerMode: true, // Center the active slide
     centerPadding: "0", // No padding around centered slide
     autoplay: true, // Enable autoplay
@@ -114,7 +117,7 @@ function MechTestimonials() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          vertical: true,
+          vertical: false, // Adjust for responsiveness
         },
       },
       {
@@ -122,7 +125,7 @@ function MechTestimonials() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          vertical: true,
+          vertical: false, // Adjust for responsiveness
         },
       },
     ],
