@@ -1,0 +1,69 @@
+import React, { useEffect } from 'react';
+// Import the images
+import ProgramImage from '../../assets/images/three-device.png';
+import HatImage from '../../assets/images/hat.png';  // Import the floating hat image
+
+// Import AOS and its CSS
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+function MechOverview() {
+  useEffect(() => {
+    // Initialize AOS
+    AOS.init({
+      duration: 1000, // Animation duration (in ms)
+      easing: 'ease-in-out', // Easing function for the animation
+      once: true, // Whether the animation should happen only once
+    });
+  }, []);
+
+  return (
+    <div className="flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0 md:space-x-8 px-8 md:px-16 py-3 md:py-6 poppins-regular">
+      {/* Left Part: Heading and Paragraph */}
+      <div className="flex-1" data-aos="fade-right">
+        <h2 className="text-3xl font-bold text-[#ff5d12] mb-4 relative">
+          {/* Floating Hat Above the "P" */}
+          <img
+            src={HatImage}
+            alt="Hat"
+            className="absolute left-[-25px] top-[-38px] w-16 h-16 animate-floating" // Apply floating animation class
+          />
+         Program Overview
+        </h2>
+        <p className="text-2xl text-gray-600 tracking-wide">
+          The Mechanical Engineering Department was established in the academic year 2005. Currently, the department offers one undergraduate program, B.E in Mechanical Engineering, with an intake of 120. The department is equipped with state-of-the-art laboratories and has a dedicated faculty team with advanced degrees in mechanical engineering fields.
+        </p>
+      </div>
+
+      {/* Right Part: Image */}
+      <div className="flex-1 bg-white" data-aos="fade-left">  {/* Make container transparent */}
+        <img
+          src={ProgramImage} // Use the imported image
+          alt="Iphone"
+          className="w-full h-96 object-contain"
+        />
+      </div>
+
+      {/* Floating animation CSS */}
+      <style>{`
+        @keyframes floating {
+          0% {
+            transform: translateY(0); /* Start at original position */
+          }
+          50% {
+            transform: translateY(-10px); /* Move up a bit */
+          }
+          100% {
+            transform: translateY(0); /* Return to original position */
+          }
+        }
+
+        .animate-floating {
+          animation: floating 3s ease-in-out infinite; /* Apply floating animation */
+        }
+      `}</style>
+    </div>
+  );
+}
+
+export default MechOverview;
