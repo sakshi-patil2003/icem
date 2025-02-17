@@ -6,6 +6,8 @@ import MechStudying from '../components/Mech/MechStudying'
 import MechBrochure from '../components/Mech/MechBrochure'
 import MechHighlights from '../components/Mech/MechHighlights'
 import MechCarrer from '../components/Mech/MechCarrer'
+import MechApply from '../components/Mech/MechApply'
+import MechTestimonials from '../components/Mech/MechTestimonials'
 
 function Mechanical() {
   return (
@@ -18,6 +20,8 @@ function Mechanical() {
       <MechBrochure />  {/* Call the MechBrochure component */}
       <MechHighlights />  {/* Call the MechHighlights component */}
       <MechCarrer />  {/* Call the MechCarrer component */}
+      <MechApply />  {/* Call the MechApply component */}
+      <MechTestimonials />  {/* Call the MechTestimonials component */}
     </div>
   )
 }
