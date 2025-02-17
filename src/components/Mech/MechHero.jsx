@@ -11,11 +11,11 @@ function MechHero() {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
   const words = [
-    "Mechanical Innovation",
-    "Mechanical Evolution",
-    "Mechanical Frontier",
-    "Mechanical Revolution",
-  ];
+    "Innovation",
+    "Automation",
+    "Precision",
+    "Revolution",
+  ];  
 
   useEffect(() => {
     const handleTyping = () => {
@@ -67,7 +67,7 @@ function MechHero() {
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-2/3">
         <h1 className="text-[54px] syne-regular text-[#ffffff] font-semibold leading-tight mb-6">
-          Lead the{" "}
+          Lead the Mechanical{" "}
           <span className="relative inline-block">
             {currentText}
             <span className="ml-1 animate-blink">|</span>

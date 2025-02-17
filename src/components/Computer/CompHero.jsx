@@ -8,10 +8,10 @@ function CompHero() {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
   const words = [
-    "Tech Innovation",
-    "Tech Evolution",
-    "Tech Frontier",
-    "Tech Revolution",
+    "Innovation",
+    "Evolution",
+    "Frontier",
+    "Revolution",
   ];
 
   useEffect(() => {
@@ -59,7 +59,7 @@ function CompHero() {
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-1/2">
         <h1 className="text-[60px] syne-regular text-[#ffffff] font-semibold leading-tight mb-6">
-          Lead the{" "}
+          Lead the Tech{" "}
           <span className="relative inline-block">
             {currentText}
             <span className="ml-1 animate-blink">|</span>
