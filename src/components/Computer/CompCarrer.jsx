@@ -13,23 +13,11 @@ function ICEMLandingPage() {
   return (
     <div className="bg-[#F6FBFF] py-16  relative poppins-regular">
       <div className="px-8 md:px-16">
-      {/* Hero Section */}
-      <div className="text-center mb-16">
-        <h1 className="text-5xl font-bold text-[#6095ff] mb-6">
-          Join the Computer Engineering Program at ICEM College Pune
-        </h1>
-        <p className="text-xl text-gray-600 mb-8">
-          Empowering the next generation of tech leaders. Unlock your potential
-          with our world-class curriculum and experienced faculty.
-        </p>
-        <button className="bg-transparent border-2 text-[#6095ff] py-2 px-6 rounded-full text-xl hover:bg-[#6095ff] hover:text-white transition-all">
-          Apply Now
-        </button>
-      </div>
+
 
       {/* Program Highlights */}
       <div className="text-center mb-20">
-        <h2 className="text-3xl font-semibold text-[#6095ff] mb-8">
+        <h2 className="text-4xl font-semibold text-[#6095ff] mb-8">
           Why Choose Computer Engineering at ICEM College?
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">

@@ -7,6 +7,7 @@ import CompBrochure from "../components/Computer/CompBrochure";
 import CompHighlights from "../components/Computer/CompHighlights";
 import CompCarrer from "../components/Computer/CompCarrer";
 import CompRecruiter from "../components/Computer/CompRecruiter";
+import CompJoin from "../components/Computer/CompJoin";
 
 function Computer() {
   return (
@@ -19,6 +20,7 @@ function Computer() {
       <CompStudying />
       <CompBrochure />
       <CompHighlights />
+      <CompJoin />
       <CompCarrer />
       <CompRecruiter />
     </div>

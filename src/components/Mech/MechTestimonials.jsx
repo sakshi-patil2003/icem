@@ -2,13 +2,13 @@ import React from "react";
 import Slider from "react-slick"; // Importing react-slick
 
 // Image Imports
-import vikramImage from "../../assets/images/user.png";
-import simranImage from "../../assets/images/user.png";
-import arjunImage from "../../assets/images/user.png";
-import meeraImage from "../../assets/images/user.png";
-import karanImage from "../../assets/images/user.png";
-import nishaImage from "../../assets/images/user.png";
-import aartiImage from "../../assets/images/user.png";
+import vikramImage from "../../assets/images/user-org-icon.png";
+import simranImage from "../../assets/images/user-org.png";
+import arjunImage from "../../assets/images/user-org-icon.png";
+import meeraImage from "../../assets/images/user-org.png";
+import karanImage from "../../assets/images/user-org-icon.png";
+import nishaImage from "../../assets/images/user-org.png";
+import aartiImage from "../../assets/images/user-org-icon.png";
 import newImage from "../../assets/images/testimony.webp"; // New Image for the right section
 
 function MechTestimonials() {
@@ -141,7 +141,7 @@ function MechTestimonials() {
     <div className="mb-4 px-8 md:px-16">
       {/* Main Heading outside the white rectangle */}
       <h2 className="text-4xl font-semibold text-[#ff7f4f] text-center mb-8">
-        What Our Mechanical Engineering Students Say
+        What Our Students Say
       </h2>
 
       {/* Single white rectangle container */}
@@ -159,7 +159,7 @@ function MechTestimonials() {
                       <img
                         src={pair[0].image}
                         alt={pair[0].name}
-                        className="w-16 h-16 rounded-full mr-4"
+                        className="w-12 h-12 rounded-full mr-4"
                       />
                       <div className="text-left">
                         <p className="text-lg font-semibold text-[#4e4e4e]">
@@ -181,7 +181,7 @@ function MechTestimonials() {
                         <img
                           src={pair[1].image}
                           alt={pair[1].name}
-                          className="w-16 h-16 rounded-full mr-4"
+                          className="w-12 h-12 rounded-full mr-4"
                         />
                         <div className="text-left">
                           <p className="text-lg font-semibold text-[#4e4e4e]">
