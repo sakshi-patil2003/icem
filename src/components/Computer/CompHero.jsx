@@ -56,6 +56,16 @@ function CompHero() {
       {/* Black Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70 z-10"></div>
 
+      {/* Add custom style for selected text */}
+      <style>
+        {`
+          ::selection {
+            background-color: #66aaff; /* Blue background for selection */
+            color: #ffffff; /* White text for selection */
+          }
+        `}
+      </style>
+
       {/* Left side content */}
       <div className="flex flex-col items-start z-20 w-1/2">
         <h1 className="text-[60px] syne-regular text-[#ffffff] font-semibold leading-tight mb-6">
@@ -192,10 +202,9 @@ function CompHero() {
           />
         </div>
         <div className="flex flex-col items-start justify-start">
-  <p className="text-lg text-white">Scroll Down</p>
-  <p className="text-sm text-gray-300">to know more</p>
-</div>
-
+          <p className="text-lg text-white">Scroll Down</p>
+          <p className="text-sm text-gray-300">to know more</p>
+        </div>
       </div>
     </div>
   );

@@ -1,4 +1,3 @@
-// MechHero.jsx
 import { useState, useEffect } from "react";
 import backgroundImage from "../../assets/images/mech-hero.jpg"; 
 import mouseIcon from "../../assets/images/white.png"; 
@@ -51,9 +50,20 @@ function MechHero() {
 
   return (
     <div
-      className="px-8 md:px-16 relative pt-32 h-screen bg-cover bg-right md:bg-center bg-no-repeat text-white flex items-start"
+      className="px-8 md:px-16  relative pt-32 h-screen bg-cover bg-right md:bg-center bg-no-repeat text-white flex items-start"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
+{/* Add custom style for selected text */}
+<style>
+  {`
+    ::selection {
+      background-color: #cc5c1f; /* Rusty orange background */
+      color: #fff8f0; /* Off-white text color for better contrast */
+    }
+  `}
+</style>
+
+
       {/* Black Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70 z-10"></div>
 
@@ -183,24 +193,6 @@ function MechHero() {
           </form>
         </div>
       </div>
-
-      {/* Scroll Down Section */}
-      {/* <div
-        className="absolute px-8 md:px-16 bottom-5 left-5 z-20 text-white text-lg flex cursor-pointer"
-        onClick={handleScrollDown}
-      >
-        <div className="flex items-center justify-center mr-4">
-          <img
-            src={mouseIcon}
-            alt="Scroll Down"
-            className="w-8 h-12 animate-bounce"
-          />
-        </div>
-        <div className="flex flex-col items-start justify-start">
-          <p className="text-lg text-white">Scroll Down</p>
-          <p className="text-sm text-gray-300">to know more</p>
-        </div>
-      </div> */}
 
       {/* Forklift Animation Component */}
       <MechForklift />

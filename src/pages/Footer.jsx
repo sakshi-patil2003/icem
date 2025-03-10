@@ -19,7 +19,7 @@ function Footer() {
   }, []);
 
   return (
-<div className="poppins-regular ">
+<div className="font-baskerville-regualr">
   <div className="bg-gray-100 px-8 md:px-16 text-black py-2 rounded-tl-4xl rounded-tr-4xl">
     <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 mt-6">
       {/* Left Column */}
