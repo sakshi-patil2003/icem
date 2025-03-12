@@ -50,7 +50,7 @@ function CompHero() {
 
   return (
     <div
-      className=" font-baskervville-regular px-8 md:px-16 relative pt-32 min-h-screen bg-cover bg-right md:bg-center bg-no-repeat text-white flex items-start"
+      className=" font-baskervville-regular px-8 md:px-16 relative pt-8 min-h-screen bg-cover bg-right md:bg-center bg-no-repeat text-white flex items-start"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       {/* Black Overlay */}

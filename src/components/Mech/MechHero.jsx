@@ -50,7 +50,7 @@ function MechHero() {
 
   return (
     <div
-      className="px-8 md:px-16  relative pt-32 h-screen bg-cover bg-right md:bg-center bg-no-repeat text-white flex items-start"
+      className="px-8 md:px-16  relative pt-8 h-screen bg-cover bg-right md:bg-center bg-no-repeat text-white flex items-start"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
 {/* Add custom style for selected text */}
