@@ -171,7 +171,7 @@ function Footer() {
   </div>
 
   {/* Copyright Section */}
-  <div className="bg-[#023b5e] py-4 px-8 md:px-16 text-left text-white text-sm ">
+  <div className="bg-[#023b5e] py-4 mt-2 px-8 md:px-16 text-left text-white text-sm ">
     <p>© 2024. Indira College of Engineering and Management.</p>
   </div>
 </div>

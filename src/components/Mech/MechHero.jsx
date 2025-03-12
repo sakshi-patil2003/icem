@@ -75,23 +75,23 @@ function MechHero() {
       />
 
       {/* Left side content */}
-      <div className="flex flex-col items-start z-20 w-2/3">
-        <h1 className="text-[54px] syne-regular text-[#ffffff] font-semibold leading-tight mb-6">
+      <div className="flex flex-col items-start z-20 md:w-2/3">
+        <h1 className="text-5xl md:text-6xl syne-regular text-[#ffffff] font-semibold leading-tight mb-6">
           Lead the Mechanical{" "}
           <span className="relative inline-block">
             {currentText}
             <span className="ml-1 animate-blink">|</span>
           </span>{" "}
           with{" "}
-          <span className="text-[#ff5d12] font-bold">Mechanical Engineering</span> at ICEM
+          <span className="text-[#ff5d12] font-bold mech-hero-wrapper">Mechanical Engineering</span> at ICEM
         </h1>
-        <p className="mt-4 text-2xl">
+        <p className="mt-4 text-3xl md:text-4xl">
           Innovative programs, expert faculty, and endless opportunities for growth await you.
         </p>
       </div>
 
       {/* Right side form container */}
-      <div className="flex justify-end w-1/2 z-20">
+      <div className="flex justify-end w-1/2 z-20 hidden lg:block">
         <div
           className="p-6 max-w-md w-full shadow-md"
           style={{ backgroundColor: "rgba(139, 197, 255, 0.3)" }}

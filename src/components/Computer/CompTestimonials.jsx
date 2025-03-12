@@ -127,8 +127,6 @@ function Testimonials() {
       },
     ],
   };
-  
-  
 
   // Function to pair testimonials for each slide
   const pairedTestimonials = [];
@@ -153,7 +151,7 @@ function Testimonials() {
               {pairedTestimonials.map((pair, index) => (
                 <div key={index} className="flex flex-col">
                   {/* First Card: Profile and Testimonial */}
-                  <div className="p-6 flex flex-col mb-6">
+                  <div className="p-6 flex flex-col mb-6 min-h-[200px]"> {/* Adjusted min-height */}
                     <div className="flex items-center mb-4">
                       <img
                         src={pair[0].image}
@@ -175,7 +173,7 @@ function Testimonials() {
 
                   {/* Second Card (for the next testimonial) */}
                   {pair[1] && (
-                    <div className="p-6 flex flex-col mb-6">
+                    <div className="p-6 flex flex-col mb-6 min-h-[200px]"> {/* Adjusted min-height */}
                       <div className="flex items-center mb-4">
                         <img
                           src={pair[1].image}

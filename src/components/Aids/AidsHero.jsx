@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import backgroundImage from "../../assets/images/herocomp-e.jpg";
+import backgroundImage from "../../assets/images/aids-robot-tab.png";
 import mouseIcon from "../../assets/images/white.png"; // Make sure the path to your PNG is correct
 
 function CompHero() {
@@ -7,12 +7,7 @@ function CompHero() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
-  const words = [
-    "Innovation",
-    "Evolution",
-    "Frontier",
-    "Revolution",
-  ];
+  const words = ["Innovation", "Evolution", "Frontier", "Revolution"];
 
   useEffect(() => {
     const handleTyping = () => {
@@ -50,47 +45,31 @@ function CompHero() {
 
   return (
     <div
-      className=" font-baskervville-regular px-8 md:px-16 relative pt-32 min-h-screen bg-cover bg-right md:bg-center bg-no-repeat text-white flex items-start"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      className="font-baskerville-regular px-8 md:px-16 relative pt-12 bg-cover bg-no-repeat text-white flex items-start"
+      style={{
+        background: "linear-gradient(to right, #0c3249, #1e5f76, #41b9d0)", // Updated gradient from left to right
+      }}
     >
-      {/* Black Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70 z-10"></div>
+      <div
+        className="absolute top-0 right-0 w-[50%] h-full bg-cover bg-no-repeat"
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundPosition: "right bottom", // Align the image to the bottom-right corner
+          backgroundSize: "contain", // Ensure the image does not stretch or crop
+        }}
+      ></div>
 
-      {/* Add custom style for selected text */}
-      <style>
-        {`
-          ::selection {
-            background-color: #66aaff; /* Blue background for selection */
-            color: #ffffff; /* White text for selection */
-          }
-        `}
-      </style>
-
-      {/* Left side content */}
-      <div className="flex flex-col items-start z-20 w-full md:w-1/2">
-        <h1 className="text-[60px] text-[#ffffff] font-semibold leading-tight mb-6">
-          Lead the Tech{" "}
-          <span className="relative inline-block">
-            {currentText}
-            <span className="ml-1 animate-blink">|</span>
-          </span>{" "}
-          with{" "}
-          <span className="text-[#b0d4e9] font-bold mech-hero-wrapper">Computer Engineering</span>{" "}
-          at ICEM
-        </h1>
-        <p className="mt-4 text-2xl">
-          Innovative programs, expert faculty, and endless opportunities for
-          growth await you.
-        </p>
-      </div>
-
-      {/* Form container (Right side) */}
-      <div className="flex justify-end w-full md:w-1/2 z-20">
-        <div
-          className="p-6 max-w-md w-full shadow-md"
-          style={{ backgroundColor: "rgba(139, 197, 255, 0.3)" }} // Semi-transparent blue
-        >
-          <form className="space-y-4">
+      {/* Left side content: Form container */}
+      <div className="flex flex-col items-start w-full md:w-1/2 z-20 mb-4">
+      <div
+  className="p-6 max-w-md w-full shadow-md"
+  style={{
+    backgroundColor: "rgba(65, 185, 208, 0.3)", // Using #41b9d0 (with some transparency)
+    borderRadius: "8px", // Optional: Add rounded corners
+    border: "2px solid #1e5f76", // Use #1e5f76 for a soft border color
+  }}
+>
+          <form className="space-y-4 ">
             <div>
               <input
                 type="text"
@@ -188,9 +167,9 @@ function CompHero() {
         </div>
       </div>
 
-      {/* New Scroll Down Section */}
+      {/* Scroll Down Section */}
       <div
-        className="absolute px-8 md:px-16 bottom-5 left-5 z-20 text-white text-lg flex cursor-pointer"
+        className="absolute bottom-5 right-5 z-20 text-white text-lg flex cursor-pointer"
         onClick={handleScrollDown}
       >
         {/* First Column: Mouse Icon */}
@@ -202,7 +181,7 @@ function CompHero() {
           />
         </div>
         <div className="flex flex-col items-start justify-start">
-          <p className="text-lg text-white">Scroll Down</p>
+          <p className="text-lg">Scroll Down</p>
           <p className="text-sm text-gray-300">to know more</p>
         </div>
       </div>

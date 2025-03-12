@@ -4,7 +4,7 @@ import backgroundImage from "../../assets/images/plane.png"; // Make sure the pa
 const MechApply = () => {
   return (
     <div
-      className="bg-[#ff5d12] py-10 text-center text-white mb-12 shadow-lg relative bg-contain bg-no-repeat bg-center"
+      className="bg-[#ff5d12] py-10 px-8 md:px-16 text-center text-white mb-12 shadow-lg relative bg-contain bg-no-repeat bg-center"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       {/* Light gray overlay */}
@@ -16,14 +16,16 @@ const MechApply = () => {
           Follow these simple steps to apply for the Mechanical Engineering
           program at ICEM College Pune:
         </p>
-        <div className="flex justify-center space-x-20 mx-auto">
+
+        {/* Container for steps */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mx-auto">
           {/* Step 1 */}
           <div
-            className="relative bg-white text-[#ffffff] p-6 shadow-xl w-48"
+            className="relative bg-white p-6 shadow-xl w-full"
             style={{ backgroundColor: "rgba(255, 165, 0, 0.3)" }}  
           >
             <div
-              className="absolute top-[-15px] left-[-15px]  text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
+              className="absolute top-[-15px] left-[-15px] text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
               style={{ backgroundColor: "rgba(255, 87, 34, 0.9)" }}
             >
               1
@@ -33,11 +35,11 @@ const MechApply = () => {
 
           {/* Step 2 */}
           <div
-            className="relative bg-white text-[#ffffff] p-6 shadow-xl w-48"
+            className="relative bg-white p-6 shadow-xl w-full"
             style={{ backgroundColor: "rgba(255, 165, 0, 0.3)" }}  
           >
             <div
-              className="absolute top-[-15px] left-[-15px]  text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
+              className="absolute top-[-15px] left-[-15px] text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
               style={{ backgroundColor: "rgba(255, 87, 34, 0.9)" }}
             >
               2
@@ -47,11 +49,11 @@ const MechApply = () => {
 
           {/* Step 3 */}
           <div
-            className="relative bg-white text-[#ffffff] p-6 shadow-xl w-48"
+            className="relative bg-white p-6 shadow-xl w-full"
             style={{ backgroundColor: "rgba(255, 165, 0, 0.3)" }}  
           >
             <div
-              className="absolute top-[-15px] left-[-15px]  text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
+              className="absolute top-[-15px] left-[-15px] text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
               style={{ backgroundColor: "rgba(255, 87, 34, 0.9)" }}
             >
               3
@@ -61,11 +63,11 @@ const MechApply = () => {
 
           {/* Step 4 */}
           <div
-            className="relative bg-white text-[#ffffff] p-6 shadow-xl w-48"
+            className="relative bg-white p-6 shadow-xl w-full"
             style={{ backgroundColor: "rgba(255, 165, 0, 0.3)" }}  
           >
             <div
-              className="absolute top-[-15px] left-[-15px]  text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
+              className="absolute top-[-15px] left-[-15px] text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
               style={{ backgroundColor: "rgba(255, 87, 34, 0.9)" }}
             >
               4
@@ -75,11 +77,11 @@ const MechApply = () => {
 
           {/* Step 5 */}
           <div
-            className="relative bg-white text-[#ffffff] p-6 shadow-xl w-48"
+            className="relative bg-white p-6 shadow-xl w-full"
             style={{ backgroundColor: "rgba(255, 165, 0, 0.3)" }}  
           >
             <div
-              className="absolute top-[-15px] left-[-15px]  text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
+              className="absolute top-[-15px] left-[-15px] text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
               style={{ backgroundColor: "rgba(255, 87, 34, 0.9)" }}
             >
               5
