@@ -8,7 +8,7 @@ import offer3Image from '../../assets/images/aids-off-3.jpg';  // Keep the origi
 import offer4Image from '../../assets/images/aids-off-5.jpg';  // Keep the original image path
 import offer5Image from '../../assets/images/aids-off-2.jpg';  // Keep the original image path
 import offer6Image from '../../assets/images/aids-off-1.jpg';  // Keep the original image path
-import backgroundImage from '../../assets/images/tech-dots.jpg';  // Import your background image
+import backgroundImage from '../../assets/images/dots.jpg';  // Import your background image
 
 function AidsOfferings() {
   useEffect(() => {

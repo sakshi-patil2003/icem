@@ -41,7 +41,7 @@ function AidsStudying() {
         <h1 className="text-4xl font-semibold text-left mb-4">
           Exploring AI and Data Science in Computer Engineering
         </h1>
-        <h1 className="text-4xl font-extralight text-left text-[#41b9d0] mb-6">
+        <h1 className="text-3xl font-extralight text-left text-[#012a32] mb-6">
           Revolutionizing Technology with Advanced Algorithms
         </h1>
         <p className="text-left text-lg mb-6">
