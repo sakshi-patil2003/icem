@@ -6,4 +6,9 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: '/', // Ensure base path is set to '/' for correct routing
+  build: {
+    rollupOptions: {
+      external: ['react-helmet'] // Mark react-helmet as external
+    }
+  }
 })
