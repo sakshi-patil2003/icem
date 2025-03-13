@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import backgroundImage from "../../assets/images/mech-hero.jpg"; 
-import mouseIcon from "../../assets/images/white.png"; 
 import gearImage from "../../assets/images/gears.png"; 
 import MechForklift from "./MechForklift"; // Import the MechForklift component
 
@@ -9,14 +8,14 @@ function MechHero() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
-  const words = [
-    "Innovation",
-    "Automation",
-    "Precision",
-    "Revolution",
-  ];  
-
   useEffect(() => {
+    const words = [
+      "Innovation",
+      "Automation",
+      "Precision",
+      "Revolution",
+    ];
+
     const handleTyping = () => {
       const currentWord = words[currentWordIndex];
 
@@ -39,30 +38,22 @@ function MechHero() {
     const timeout = setTimeout(handleTyping, isDeleting ? 80 : 120);
 
     return () => clearTimeout(timeout);
-  }, [currentText, isDeleting, currentWordIndex]);
-
-  const handleScrollDown = () => {
-    window.scrollBy({
-      top: window.innerHeight * 0.4,
-      behavior: "smooth",
-    });
-  };
+  }, [currentText, isDeleting, currentWordIndex]); // Removed 'words' dependency
 
   return (
     <div
-      className="px-8 md:px-16  relative pt-8 h-screen bg-cover bg-right md:bg-center bg-no-repeat text-white flex items-start"
+      className="px-8 md:px-16 relative pt-8 h-screen bg-cover bg-right md:bg-center bg-no-repeat text-white flex items-start"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-{/* Add custom style for selected text */}
-<style>
-  {`
-    ::selection {
-      background-color: #cc5c1f; /* Rusty orange background */
-      color: #fff8f0; /* Off-white text color for better contrast */
-    }
-  `}
-</style>
-
+      {/* Add custom style for selected text */}
+      <style>
+        {`
+          ::selection {
+            background-color: #cc5c1f; /* Rusty orange background */
+            color: #fff8f0; /* Off-white text color for better contrast */
+          }
+        `}
+      </style>
 
       {/* Black Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70 z-10"></div>

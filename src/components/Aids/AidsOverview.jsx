@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 // Import the images
 import ProgramImage from '../../assets/images/robot-overview.png'; // Replace with the correct image path
 import HatImage from '../../assets/images/hat.png';  // Import the floating hat image
@@ -19,13 +19,13 @@ function AidsOverview() {
 
   return (
     <div
-      className="flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0 md:space-x-8 px-8 md:px-16  font-baskerville-regular"
+      className="flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0 md:space-x-8 px-8 md:px-16 py-3 md:py-6 font-baskerville-regular"
       style={{
         background: 'linear-gradient(to right, #0c3249, #1e5f76, #41b9d0)',
       }}
     >
       {/* Right Part: Image (formerly left) */}
-      <div className="flex-1 " data-aos="fade-left">
+      <div className="flex-1 flex items-center" data-aos="fade-left">  
         <img
           src={ProgramImage} // Use the imported image
           alt="AIDS Program"
@@ -34,8 +34,8 @@ function AidsOverview() {
       </div>
 
       {/* Left Part: Heading and Paragraph (formerly right) */}
-      <div className="flex-1 " data-aos="fade-right pt-3 md:pt-6">
-        <h2 className="text-3xl font-bold text-[#f4f4f4] mb-4 relative ">
+      <div className="flex-1" data-aos="fade-right">
+        <h2 className="text-3xl font-bold text-[#f4f4f4] mb-4 relative">
           {/* Floating Hat Above the "P" */}
           <img
             src={HatImage}

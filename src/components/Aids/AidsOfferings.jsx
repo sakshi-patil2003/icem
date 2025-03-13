@@ -8,6 +8,7 @@ import offer3Image from '../../assets/images/aids-off-3.jpg';  // Keep the origi
 import offer4Image from '../../assets/images/aids-off-5.jpg';  // Keep the original image path
 import offer5Image from '../../assets/images/aids-off-2.jpg';  // Keep the original image path
 import offer6Image from '../../assets/images/aids-off-1.jpg';  // Keep the original image path
+import backgroundImage from '../../assets/images/tech-dots.jpg';  // Import your background image
 
 function AidsOfferings() {
   useEffect(() => {
@@ -41,11 +42,14 @@ function AidsOfferings() {
     <div 
       className="px-8 md:px-16 py-6 md:py-8 poppins-regular"
       style={{
-        background: "linear-gradient(to right, #0c3249, #1e5f76, #41b9d0)",
+        backgroundImage: `url(${backgroundImage})`,  // Use the imported image here
+        backgroundSize: 'cover', // Ensures the image covers the full background
+        backgroundPosition: 'center', // Centers the image
+        // Remove backgroundAttachment: 'fixed' to allow the image to move with the scroll
       }}
     >
-      <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 text-white" data-aos="fade-up">
-      AIDS Program Offerings
+      <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 text-sky-900" data-aos="fade-up">
+        AIDS Program Offerings
       </h2>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4 md:gap-x-20 z-5 justify-center">

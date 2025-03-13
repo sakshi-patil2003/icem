@@ -4,6 +4,8 @@ import AidsPointers from '../components/Aids/AidsPointers'
 import AidsOverview from '../components/Aids/AidsOverview'
 import AidsOfferings from '../components/Aids/AidsOfferings'
 import AidsBrochure from '../components/Aids/AidsBrochure'
+import AidsApply from '../components/Aids/AidsApply'
+import AidsTestimonials from '../components/Aids/AidsTestimonials'
 
 function Aids() {
   return (
@@ -15,7 +17,8 @@ function Aids() {
       <AidsAbout />  {/* Call the MechAbout component */}
       <AidsBrochure />  {/* Call the MechBrochure component */}
       <AidsOfferings />  {/* Call the MechOfferings component */}
-     
+     <AidsApply />  {/* Call the MechApply component */}
+     <AidsTestimonials />  {/* Call the MechTestimonials component */}
     </div>
   )
 }
