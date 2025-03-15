@@ -6,6 +6,7 @@ import Computer from './pages/Computer'; // Import your Computer component
 import Mechanical from './pages/Mechanical'; // Import your Mechanical component
 import Aids from './pages/Aids'; // Import your Aids component
 import IT from './pages/It'; // Import the new IT component
+import Entc from './pages/Entc'; // Import your ENTC component (newly added)
 import Navbar from './pages/Navbar'; // Import your Navbar component
 import Footer from './pages/Footer';
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/mech" element={<PageWithDynamicTitle title="Mech" />} />
         <Route path="/aids" element={<PageWithDynamicTitle title="AIDS" />} />
         <Route path="/it" element={<PageWithDynamicTitle title="IT" />} /> {/* Add the IT route */}
+        <Route path="/entc" element={<PageWithDynamicTitle title="ENTC" />} /> {/* Add the ENTC route */}
       </Routes>
       <Footer />
     </Router>
@@ -40,6 +42,7 @@ function PageWithDynamicTitle({ title }) {
       {title === "Mech" && <Mechanical />}
       {title === "AIDS" && <Aids />}
       {title === "IT" && <IT />} {/* Add the condition for IT */}
+      {title === "ENTC" && <Entc />} {/* Add the condition for ENTC */}
     </>
   );
 }

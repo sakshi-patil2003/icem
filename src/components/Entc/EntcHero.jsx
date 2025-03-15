@@ -1,10 +1,10 @@
 import React from 'react';
-import bgImage from '../../assets/images/it-bg.jpg'; // Adjust the path to your background image
+import bgImage from '../../assets/images/entc-bg.jpg'; // Adjust the path to your background image
 
-function ItHero() {
+function EntcHero() {
   return (
     <div className="relative h-screen">
-      {/* Background Image with 180-degree rotation */}
+      {/* Background Image */}
       <div
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
         style={{
@@ -25,10 +25,10 @@ function ItHero() {
         {/* Left side: Heading (Aligned to Top) */}
         <div className="w-1/2 flex flex-col items-start pt-10">
           <h1 className="text-5xl text-white text-left pl-10 leading-normal">
-            Shape the Future of Technology with Information Technology at ICEM
+            Shape the Future of Technology with Electronics and Telecommunication Engineering at ICEM
           </h1>
           <p className="text-3xl text-white pl-10 mt-8 leading-10">
-            Innovative programs, expert faculty, and endless opportunities for growth await you.
+            Advanced labs, expert faculty, and exceptional career opportunities await you.
           </p>
         </div>
 
@@ -43,7 +43,7 @@ function ItHero() {
                 <input
                   type="text"
                   id="name"
-                  className="w-full p-1.5 bg-gradient-to-r from-[#e1f1fb] via-[#c1d9f2] to-[#a0c4e7] text-black rounded border border-[#001E5D] focus:outline-none focus:ring-2 focus:ring-[#001E5D]"
+                  className="w-full p-1.5 bg-gradient-to-r from-[#e1f1fb] via-[#c1d9f2] to-[#a0c4e7] text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
                   placeholder="Enter your name"
                   required
                 />
@@ -52,7 +52,7 @@ function ItHero() {
                 <input
                   type="email"
                   id="email"
-                  className="w-full p-1.5 bg-gradient-to-r from-[#e1f1fb] via-[#c1d9f2] to-[#a0c4e7] text-black rounded border border-[#001E5D] focus:outline-none focus:ring-2 focus:ring-[#001E5D]"
+                  className="w-full p-1.5 bg-gradient-to-r from-[#e1f1fb] via-[#c1d9f2] to-[#a0c4e7] text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
                   placeholder="Enter your email"
                   required
                 />
@@ -61,7 +61,7 @@ function ItHero() {
                 <input
                   type="tel"
                   id="mobile"
-                  className="w-full p-1.5 bg-gradient-to-r from-[#e1f1fb] via-[#c1d9f2] to-[#a0c4e7] text-black rounded border border-[#001E5D] focus:outline-none focus:ring-2 focus:ring-[#001E5D]"
+                  className="w-full p-1.5 bg-gradient-to-r from-[#e1f1fb] via-[#c1d9f2] to-[#a0c4e7] text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
                   placeholder="Enter your mobile number"
                   required
                 />
@@ -69,7 +69,7 @@ function ItHero() {
               <div>
                 <select
                   id="state"
-                  className="w-full p-1.5 bg-gradient-to-r from-[#e1f1fb] via-[#c1d9f2] to-[#a0c4e7] text-black rounded border border-[#001E5D] focus:outline-none focus:ring-2 focus:ring-[#001E5D]"
+                  className="w-full p-1.5 bg-gradient-to-r from-[#e1f1fb] via-[#c1d9f2] to-[#a0c4e7] text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
                   required
                 >
                   <option value="">Select State</option>
@@ -79,7 +79,7 @@ function ItHero() {
               <div>
                 <select
                   id="city"
-                  className="w-full p-1.5 bg-gradient-to-r from-[#e1f1fb] via-[#c1d9f2] to-[#a0c4e7] text-black rounded border border-[#001E5D] focus:outline-none focus:ring-2 focus:ring-[#001E5D]"
+                  className="w-full p-1.5 bg-gradient-to-r from-[#e1f1fb] via-[#c1d9f2] to-[#a0c4e7] text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
                   required
                 >
                   <option value="">Select City</option>
@@ -89,7 +89,7 @@ function ItHero() {
               <div>
                 <select
                   id="discipline"
-                  className="w-full p-1.5 bg-gradient-to-r from-[#e1f1fb] via-[#c1d9f2] to-[#a0c4e7] text-black rounded border border-[#001E5D] focus:outline-none focus:ring-2 focus:ring-[#001E5D]"
+                  className="w-full p-1.5 bg-gradient-to-r from-[#e1f1fb] via-[#c1d9f2] to-[#a0c4e7] text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
                   required
                 >
                   <option value="">Select Discipline</option>
@@ -99,7 +99,7 @@ function ItHero() {
               <div>
                 <select
                   id="course"
-                  className="w-full p-1.5 bg-gradient-to-r from-[#e1f1fb] via-[#c1d9f2] to-[#a0c4e7] text-black rounded border border-[#001E5D] focus:outline-none focus:ring-2 focus:ring-[#001E5D]"
+                  className="w-full p-1.5 bg-gradient-to-r from-[#e1f1fb] via-[#c1d9f2] to-[#a0c4e7] text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
                   required
                 >
                   <option value="">Select Course</option>
@@ -109,7 +109,7 @@ function ItHero() {
               <div>
                 <select
                   id="program"
-                  className="w-full p-1.5 bg-gradient-to-r from-[#e1f1fb] via-[#c1d9f2] to-[#a0c4e7] text-black rounded border border-[#001E5D] focus:outline-none focus:ring-2 focus:ring-[#001E5D]"
+                  className="w-full p-1.5 bg-gradient-to-r from-[#e1f1fb] via-[#c1d9f2] to-[#a0c4e7] text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
                   required
                 >
                   <option value="">Select Program</option>
@@ -120,14 +120,14 @@ function ItHero() {
                 <input
                   type="number"
                   id="cet-score"
-                  className="w-full p-1.5 bg-gradient-to-r from-[#e1f1fb] via-[#c1d9f2] to-[#a0c4e7] text-black rounded border border-[#001E5D] focus:outline-none focus:ring-2 focus:ring-[#001E5D]"
+                  className="w-full p-1.5 bg-gradient-to-r from-[#e1f1fb] via-[#c1d9f2] to-[#a0c4e7] text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
                   placeholder="Enter CET Score"
                 />
               </div>
               <div>
                 <button
                   type="submit"
-                  className="w-full py-2 bg-[#001E5D] text-white rounded-lg hover:bg-[#001A56]"
+                  className="w-full py-2 bg-[#374151] text-white rounded-lg hover:bg-[#2c3539]"
                 >
                   Submit
                 </button>
@@ -140,4 +140,4 @@ function ItHero() {
   );
 }
 
-export default ItHero;
+export default EntcHero;
