@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { gsap } from 'gsap';
 // Import images
-import basicElectronicsImg from '../../assets/images/aids-off-1.jpg';
-import digitalElectronicsImg from '../../assets/images/aids-off-1.jpg';
-import digitalCommunicationImg from '../../assets/images/aids-off-1.jpg';
-import softwareLabImg from '../../assets/images/aids-off-1.jpg';
+import basicElectronicsImg from '../../assets/images/Basic Electronics Lab.jpg';
+import digitalElectronicsImg from '../../assets/images/Digital Electronics Lab.jpg';
+import digitalCommunicationImg from '../../assets/images/Digital Communication Lab.jpg';
+import softwareLabImg from '../../assets/images/Software Lab.jpg';
 
 const EntcFacility = () => {
   const laboratories = [
@@ -43,7 +43,7 @@ const EntcFacility = () => {
       const overlay = card.querySelector('.card-overlay');
       const labName = card.querySelector('.card-name');
 
-      // Animate the overlay (orange block)
+      // Animate the overlay (color transition)
       gsap.to(overlay, {
         opacity: 1,
         scaleX: 1,
@@ -123,14 +123,14 @@ const EntcFacility = () => {
   }, []);
 
   return (
-    <div className="bg-gray-100 py-16">
+    <div className="bg-[#F1F5F9] py-4"> {/* Light background for the container */}
       <div className="container mx-auto px-6">
-        <h1 className="text-4xl font-bold text-center text-indigo-700 mb-12">Electronics and Telecommunication Engineering Laboratories</h1>
+        <h1 className="text-4xl font-bold text-center text-[#026670] mb-6 mt-2">Electronics and Telecommunication Engineering Laboratories</h1>
         <div className="flex gap-8">
           {laboratories.map((lab, index) => (
             <div key={index} className="flex-1">
-              {/* Replace the paragraph with the lab name */}
-              <p className="text-lg font-medium text-center mb-4">
+              {/* Lab Name */}
+              <p className="text-lg font-medium text-center text-[#374151] mb-4">
                 {lab.name}
               </p>
 
@@ -139,25 +139,18 @@ const EntcFacility = () => {
                 style={{ backgroundImage: `url(${lab.bgImage})` }}
               >
                 {/* Overlay animation */}
-                <div className="card-overlay absolute inset-0 bg-gradient-to-b from-transparent to-[#b5651d] opacity-0 z-10 transform scale-0 origin-bottom-left"></div>
+                <div className="card-overlay absolute inset-0 bg-gradient-to-b from-transparent to-[#026670] opacity-0 z-10 transform scale-0 origin-bottom-left"></div>
 
-
-
+                {/* Text container with equipment and details */}
                 <div className="card-text absolute bottom-0 left-0 z-20 opacity-0 transform scale-0 translate-x-[-10px] translate-y-[20px] p-4">
-  <h3 className="text-sm font-semibold text-white mb-2">{lab.details}</h3>
-  
-  {/* Permanent heading for Equipment */}
-  <h4 className="text-sm font-bold text-white mb-2">Equipment</h4> {/* Heading for the list */}
-  
-  {/* Unordered list for equipment items with bullet points */}
-  <ul className="text-sm text-white list-disc pl-5"> {/* Add `list-disc` for bullet points */}
-    {lab.equipment.map((item, idx) => (
-      <li key={idx}>{item}</li>
-    ))}
-  </ul>
-</div>
-
-
+                  <h3 className="text-sm font-semibold text-white mb-2">{lab.details}</h3>
+                  <h4 className="text-sm font-bold text-white mb-2">Equipment</h4>
+                  <ul className="text-sm text-white list-disc pl-5">
+                    {lab.equipment.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
           ))}
