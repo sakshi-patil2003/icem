@@ -1,5 +1,5 @@
 import React from 'react';
-import bgVideoMov from '../../assets/images/binary.mov';  // Import the .mov file
+// import bgVideoMov from '../../assets/images/binary.mov';  // Import the .mov file
 import bgVideoMp4 from '../../assets/images/binary.mp4';  // Import the .mp4 file
 
 function ItHero() {
