@@ -15,7 +15,7 @@ function ItHero() {
         >
           {/* Video sources for different formats */}
           <source src={bgVideoMp4} type="video/mp4" />
-          <source src={bgVideoMov} type="video/quicktime" />
+          {/* <source src={bgVideoMov} type="video/quicktime" /> */}
           Your browser does not support the video tag.
         </video>
       </div>
