@@ -1,20 +1,24 @@
 import React from 'react';
-import bgImage from '../../assets/images/it-bg.jpg'; // Adjust the path to your background image
+import bgVideoMov from '../../assets/images/binary.mov';  // Import the .mov file
+import bgVideoMp4 from '../../assets/images/binary.mp4';  // Import the .mp4 file
 
 function ItHero() {
   return (
     <div className="relative h-screen">
-      {/* Background Image with 180-degree rotation */}
-      <div
-        className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
-        style={{
-          backgroundImage: `url(${bgImage})`,
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-          transform: 'rotate(180deg)', // Apply rotation only to the background
-          transformOrigin: 'center', // Make sure the rotation is centered
-        }}
-      ></div>
+      {/* Background Video */}
+      <div className="absolute top-0 left-0 w-full h-full">
+        <video
+          className="w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+        >
+          {/* Video sources for different formats */}
+          <source src={bgVideoMp4} type="video/mp4" />
+          <source src={bgVideoMov} type="video/quicktime" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
       {/* Black Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div> {/* Black overlay with 50% opacity */}
