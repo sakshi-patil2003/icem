@@ -1,6 +1,6 @@
 import React from 'react';
 // import bgVideoMov from '../../assets/images/binary.mov';  // Import the .mov file
-import bgVideoMp4 from '../../assets/images/binary.mp4';  // Import the .mp4 file
+import bgVideoMp4 from '../../assets/images/binary-code-green.mp4';  // Import the .mp4 file
 
 function ItHero() {
   return (
@@ -21,7 +21,7 @@ function ItHero() {
       </div>
 
       {/* Black Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div> {/* Black overlay with 50% opacity */}
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70"></div> {/* Black overlay with 50% opacity */}
 
       {/* Content (Form and Heading) */}
       <div className="relative z-10 flex justify-between h-full">
@@ -29,7 +29,7 @@ function ItHero() {
         {/* Left side: Heading (Aligned to Top) */}
         <div className="w-1/2 flex flex-col items-start pt-10">
           <h1 className="text-5xl text-white text-left pl-10 leading-normal">
-            Shape the Future of Technology with Information Technology at ICEM
+            Shape the Future of Technology with <span className='text-[#abbee9]'>Information Technology</span> at ICEM
           </h1>
           <p className="text-3xl text-white pl-10 mt-8 leading-10">
             Innovative programs, expert faculty, and endless opportunities for growth await you.

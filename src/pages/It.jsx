@@ -1,12 +1,13 @@
-import React from 'react'
-import ItHero from '../components/It/ItHero'  // Import the ItHero component
-import ItPointers from '../components/It/ItPointers'  // Import the ItPointers component
-import ItOfferings from '../components/It/ItOfferings'
-import ItStudying from '../components/It/ItStudying'
-import ItBrochure from '../components/It/ItBrochure'
-import ItHighlights from '../components/It/ItHighlights'
-import ItApply from '../components/It/ItApply'
-import ItTestimonials from '../components/It/ItTestimonials'
+import React from 'react';
+import ItHero from '../components/It/ItHero';  // Import the ItHero component
+import ItPointers from '../components/It/ItPointers';  // Import the ItPointers component
+import ItOfferings from '../components/It/ItOfferings';
+import ItStudying from '../components/It/ItStudying';
+import ItBrochure from '../components/It/ItBrochure';
+import ItHighlights from '../components/It/ItHighlights';
+import ItApply from '../components/It/ItApply';
+import ItTestimonials from '../components/It/ItTestimonials';
+import AutoChatbot from '../components/AutoChatbot'; // Import AutoChatbot
 
 function It() {
   return (
@@ -19,8 +20,11 @@ function It() {
       <ItHighlights />  {/* Call the ItHighlights component */}
       <ItApply />  {/* Call the ItApply component */}
       <ItTestimonials />  {/* Call the ItTestimonials component */}
+
+      {/* Include the chatbot on this page */}
+      <AutoChatbot />
     </div>
-  )
+  );
 }
 
-export default It
+export default It;

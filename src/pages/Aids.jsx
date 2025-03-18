@@ -1,26 +1,30 @@
-import AidsHero from '../components/Aids/AidsHero'  // Import the Mechhero component (adjust the path as needed)
-import AidsAbout from '../components/Aids/AidsAbout'
-import AidsPointers from '../components/Aids/AidsPointers'
-import AidsOverview from '../components/Aids/AidsOverview'
-import AidsOfferings from '../components/Aids/AidsOfferings'
-import AidsBrochure from '../components/Aids/AidsBrochure'
-import AidsApply from '../components/Aids/AidsApply'
-import AidsTestimonials from '../components/Aids/AidsTestimonials'
+import React from 'react';
+import AidsHero from '../components/Aids/AidsHero';
+import AidsAbout from '../components/Aids/AidsAbout';
+import AidsPointers from '../components/Aids/AidsPointers';
+import AidsOverview from '../components/Aids/AidsOverview';
+import AidsOfferings from '../components/Aids/AidsOfferings';
+import AidsBrochure from '../components/Aids/AidsBrochure';
+import AidsApply from '../components/Aids/AidsApply';
+import AidsTestimonials from '../components/Aids/AidsTestimonials';
+import AutoChatbot from '../components/AutoChatbot'; // Import AutoChatbot
 
 function Aids() {
   return (
     <div>
-      <AidsHero />  {/* Call the Mechhero component */}
-    
-      <AidsPointers />  {/* Call the MechPointers component */}
-      <AidsOverview />  {/* Call the MechOverview component */}
-      <AidsAbout />  {/* Call the MechAbout component */}
-      <AidsBrochure />  {/* Call the MechBrochure component */}
-      <AidsOfferings />  {/* Call the MechOfferings component */}
-     <AidsApply />  {/* Call the MechApply component */}
-     <AidsTestimonials />  {/* Call the MechTestimonials component */}
+      <AidsHero />  {/* Hero component for Aids */}
+      <AidsPointers />  {/* Pointers section */}
+      <AidsOverview />  {/* Overview section */}
+      <AidsAbout />  {/* About section */}
+      <AidsBrochure />  {/* Brochure section */}
+      <AidsOfferings />  {/* Offerings section */}
+      <AidsApply />  {/* Apply section */}
+      <AidsTestimonials />  {/* Testimonials section */}
+      
+      {/* Include the chatbot on this specific page */}
+      <AutoChatbot />
     </div>
-  )
+  );
 }
 
-export default Aids
+export default Aids;

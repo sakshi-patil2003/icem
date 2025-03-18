@@ -87,6 +87,13 @@ function ItTestimonials() {
       image: rajeshImage,
     },
     {
+      name: "Arjun Rao - Junior Web Developer",
+      department: "Information Technology",
+      year: "Batch-25",
+      text: '"The exposure to various programming languages and technologies at ICEM made me confident in my coding skills. The environment is dynamic, and the faculty is top-notch."',
+      image: arjunImage,
+    },
+    {
       name: "Priya Sharma - IT Consultant",
       department: "Information Technology",
       year: "Batch-25",

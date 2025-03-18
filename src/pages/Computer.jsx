@@ -8,6 +8,7 @@ import CompHighlights from "../components/Computer/CompHighlights";
 import CompCarrer from "../components/Computer/CompCarrer";
 import CompRecruiter from "../components/Computer/CompRecruiter";
 import CompJoin from "../components/Computer/CompJoin";
+import AutoChatbot from "../components/AutoChatbot"; // Import AutoChatbot
 
 function Computer() {
   return (
@@ -23,6 +24,8 @@ function Computer() {
       <CompJoin />
       <CompCarrer />
       <CompRecruiter />
+
+      <AutoChatbot />
     </div>
   );
 }

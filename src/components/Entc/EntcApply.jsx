@@ -89,9 +89,10 @@ const EntcApply = () => {
           </div>
         </div>
 
-        <button className="bg-[#9FEDD7] text-[#026670] py-3 px-8 rounded-full text-xl hover:bg-[#A2F5E1] transition-all mt-8">
-          Apply Now
-        </button>
+        <button className="bg-[#9FEDD7] text-[#026670] py-3 px-8 rounded-full text-xl hover:bg-[#A2F5E1] transition-all duration-300 ease-in-out mt-8 transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#026670] focus:ring-opacity-50">
+  Apply Now
+</button>
+
       </div>
     </div>
   );

@@ -1,27 +1,32 @@
+import React from "react";
 import './App.css';
 import './index.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // No need for useLocation anymore
-import { Helmet } from 'react-helmet'; // Import Helmet
-import Computer from './pages/Computer'; // Import your Computer component
-import Mechanical from './pages/Mechanical'; // Import your Mechanical component
-import Aids from './pages/Aids'; // Import your Aids component
-import IT from './pages/It'; // Import the new IT component
-import Entc from './pages/Entc'; // Import your ENTC component (newly added)
-import Navbar from './pages/Navbar'; // Import your Navbar component
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+import Computer from './pages/Computer';
+import Mechanical from './pages/Mechanical';
+import Aids from './pages/Aids';  // Aids page with chatbot
+import IT from './pages/It';  // IT page with chatbot
+import Entc from './pages/Entc';
+import Navbar from './pages/Navbar';
 import Footer from './pages/Footer';
+import ApplyNowButton from './components/ApplyNowButton';
 
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/comp" element={<PageWithDynamicTitle title="Comp" />} />
-        <Route path="/mech" element={<PageWithDynamicTitle title="Mech" />} />
-        <Route path="/aids" element={<PageWithDynamicTitle title="AIDS" />} />
-        <Route path="/it" element={<PageWithDynamicTitle title="IT" />} /> {/* Add the IT route */}
-        <Route path="/entc" element={<PageWithDynamicTitle title="ENTC" />} /> {/* Add the ENTC route */}
-      </Routes>
-      <Footer />
+      <div className="relative">
+        <Navbar />
+        <Routes>
+          <Route path="/comp" element={<PageWithDynamicTitle title="Comp" />} />
+          <Route path="/mech" element={<PageWithDynamicTitle title="Mech" />} />
+          <Route path="/aids" element={<PageWithDynamicTitle title="AIDS" />} />
+          <Route path="/it" element={<PageWithDynamicTitle title="IT" />} />
+          <Route path="/entc" element={<PageWithDynamicTitle title="ENTC" />} />
+        </Routes>
+        <Footer />
+        <ApplyNowButton />
+      </div>
     </Router>
   );
 }
@@ -32,7 +37,6 @@ function PageWithDynamicTitle({ title }) {
 
   return (
     <>
-      {/* Update title dynamically */}
       <Helmet>
         <title>{dynamicTitle}</title>
       </Helmet>
@@ -40,9 +44,9 @@ function PageWithDynamicTitle({ title }) {
       {/* Render the component based on the route */}
       {title === "Comp" && <Computer />}
       {title === "Mech" && <Mechanical />}
-      {title === "AIDS" && <Aids />}
-      {title === "IT" && <IT />} {/* Add the condition for IT */}
-      {title === "ENTC" && <Entc />} {/* Add the condition for ENTC */}
+      {title === "AIDS" && <Aids />} {/* Aids page with chatbot */}
+      {title === "IT" && <IT />} {/* IT page with chatbot */}
+      {title === "ENTC" && <Entc />}
     </>
   );
 }
