@@ -21,7 +21,6 @@ function Entc() {
         <EntcApply />
         <EntcTestimonials />  {/* Call the EntcTestimonials component */}
 
-        <AutoChatbot />
     </div>
   )
 }

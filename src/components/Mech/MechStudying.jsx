@@ -7,9 +7,10 @@ import {
   FaHandsHelping,
   FaChartLine,
 } from "react-icons/fa";
-import MyImage from "../../assets/images/mech-male-b.jpg"; 
-import Image1 from "../../assets/images/mech-male-a.jpg"; 
-import Image2 from "../../assets/images/mech-male-c.jpg"; 
+import std1 from '../../assets/images/std1.jpg';
+import std2 from '../../assets/images/std2.jpg';
+import indira from '../../assets/images/indiraCLG.jpg';
+
 
 function MechStudying() {
   return (
@@ -17,30 +18,28 @@ function MechStudying() {
       {/* Left Side (Image Section with full height and 50% width) */}
       <div className="w-1/2 grid grid-cols-2 gap-4">
         {/* First Column: One Row with One Image */}
-        <div className="col-span-1 h-full flex flex-col justify-center">
+        <div className="col-span-2 h-full flex">
           <img
-            src={MyImage}
+            src={indira}
             alt="Image 1"
             className="w-full h-full object-cover"
           />
         </div>
-
         {/* Second Column: Two Rows with Two Images */}
-        <div className="col-span-1 grid grid-rows-2 gap-2 h-full">
-          <div className="row-span-1 h-full">
+        <div className=" grid grid-rows-1 gap-2 h-full">
+          <div className="row-span-1 flex gap-3 h-full">
             <img
-              src={Image1}
+              src={std2}
               alt="Image 2"
               className="w-full h-full object-cover"
             />
-          </div>
-          <div className="row-span-1 h-full">
-            <img
-              src={Image2}
+               <img
+              src={std1}
               alt="Image 3"
               className="w-full h-full object-cover"
             />
           </div>
+         
         </div>
       </div>
 

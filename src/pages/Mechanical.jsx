@@ -9,7 +9,7 @@ import MechCarrer from '../components/Mech/MechCarrer'
 import MechApply from '../components/Mech/MechApply'
 import MechTestimonials from '../components/Mech/MechTestimonials'
 import AutoChatbot from '../components/AutoChatbot'  // Import AutoChatbot
-
+import MechJourny from '../components/Mech/MechJourny'
 function Mechanical() {
   return (
     <div>
@@ -23,8 +23,7 @@ function Mechanical() {
       <MechCarrer />  {/* Call the MechCarrer component */}
       <MechApply />  {/* Call the MechApply component */}
       <MechTestimonials />  {/* Call the MechTestimonials component */}
-
-      <AutoChatbot />
+      <MechJourny/>
     </div>
   )
 }

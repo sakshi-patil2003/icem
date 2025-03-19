@@ -39,7 +39,7 @@ function ItHero() {
         {/* Right side: Form (Vertically Centered) */}
         <div className="w-1/2 flex justify-center items-center">
           <div
-            className="p-6 max-w-md w-full shadow-md"
+            className="p-6 max-w-md w-full shadow-md rounded-md"
             style={{ backgroundColor: "rgba(139, 197, 255, 0.3)" }}
           >
             <form className="space-y-4">

@@ -10,6 +10,19 @@ import karanImage from "../../assets/images/user-org-icon.png";
 import nishaImage from "../../assets/images/user-org.png";
 import aartiImage from "../../assets/images/user-org-icon.png";
 import newImage from "../../assets/images/testimony.webp"; // New Image for the right section
+import force from "../../assets/images/came/force.png"
+import tata from "../../assets/images/came/tata.png"
+import bluestar from "../../assets/images/came/blue star.png"
+import techM from "../../assets/images/came/tech M.png"
+import thys from "../../assets/images/came/thy.jpg"
+import kpit from "../../assets/images/came/kpit.png"
+import rudder from "../../assets/images/came/Rudder.jpg"
+import yazaki from "../../assets/images/came/yazaki.png"
+import hettich from "../../assets/images/came/hettich.jpg"
+import faurecia from "../../assets/images/came/faurecia.jpg"
+import vander from "../../assets/images/came/vanderland.png"
+import skf from "../../assets/images/came/skf.jpg"
+
 
 function MechTestimonials() {
   const testimonials = [
@@ -109,7 +122,7 @@ function MechTestimonials() {
     centerMode: true, // Center the active slide
     centerPadding: "0", // No padding around centered slide
     autoplay: true, // Enable autoplay
-    autoplaySpeed: 3000, // Set autoplay speed (3 seconds here)
+    autoplaySpeed: 5000, // Set autoplay speed (3 seconds here)
     pauseOnHover: false, // Disable stopping on hover
     responsive: [
       {
@@ -140,15 +153,19 @@ function MechTestimonials() {
   return (
     <div className="mb-4 px-8 md:px-16">
       {/* Main Heading outside the white rectangle */}
-      <h2 className="text-4xl font-semibold text-[#ff7f4f] text-center mb-8">
+     <div className='flex  justify-around'>
+     <h2 className="text-4xl font-semibold text-[#ff7f4f] text-center mb-4 ">
         What Our Students Say
       </h2>
-
+      <h2 className="text-4xl font-semibold text-[#ff7f4f] text-center ">
+        Are Reqruiters
+      </h2>
+     </div>
       {/* Single white rectangle container */}
       <div className="bg-white shadow-lg">
         <div className="flex justify-between items-center gap-4">
           {/* Testimonial Section - 60% */}
-          <div className="w-3/5">
+          <div className="w-3/6">
             {/* Slick Slider */}
             <Slider {...settings}>
               {pairedTestimonials.map((pair, index) => (
@@ -202,12 +219,24 @@ function MechTestimonials() {
           </div>
 
           {/* New Section - 40% with Image */}
-          <div className="w-2/5">
-            <img
+          <div className="w-2/4 flex flex-wrap justify-center gap-5 items-center">
+            {/* <img
               src={newImage}
               alt="New Image"
               className="w-full h-full object-cover shadow-lg transform scale-x-[-1]"
-            />
+            /> */}
+            <div className="h-22 w-30 shadow  flex"><img className="object-cover"  src={force}/></div>
+            <div className="h-22 w-30 shadow  flex"><img className="object-cover"  src={tata}/></div>
+            <div className="h-22 w-30 shadow  flex"><img className="object-cover"  src={bluestar}/></div>
+            <div className="h-22 w-30 shadow  flex"><img className="object-cover"  src={techM}/></div>
+            <div className="h-22 w-30 shadow  flex"><img className="object-cover"  src={thys}/></div>
+            <div className="h-22 w-30 shadow  flex"><img className="object-cover"  src={kpit}/></div>
+            <div className="h-22 w-30 shadow  flex"><img className="object-cover"  src={rudder}/></div>
+            <div className="h-22 w-30 shadow  flex"><img className="object-cover"  src={yazaki}/></div>
+            <div className="h-22 w-30 shadow  flex"><img className="object-cover"  src={hettich}/></div>
+            <div className="h-22 w-30 shadow  flex"><img className="object-cover"  src={faurecia}/></div>
+            <div className="h-22 w-30 shadow  flex"><img className="object-cover"  src={vander}/></div>
+            <div className="h-22 w-30 shadow  flex"><img className="object-cover"  src={skf}/></div>
           </div>
         </div>
       </div>

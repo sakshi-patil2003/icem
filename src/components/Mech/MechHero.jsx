@@ -66,8 +66,8 @@ function MechHero() {
       />
 
       {/* Left side content */}
-      <div className="flex flex-col items-start z-20 md:w-2/3">
-        <h1 className="text-5xl md:text-6xl syne-regular text-[#ffffff] font-semibold leading-tight mb-6">
+      <div className="flex flex-col items-start z-20  w-full hidden md:block sm:block">
+        <h1 className="text-6xl md:text-5xl syne-regular text-[#ffffff] font-semibold leading-tight mb-6">
           Lead the Mechanical{" "}
           <span className="relative inline-block">
             {currentText}
@@ -82,12 +82,12 @@ function MechHero() {
       </div>
 
       {/* Right side form container */}
-      <div className="flex justify-end w-1/2 z-20 hidden lg:block">
+      <div className="flex justify-end  z-20 w-full ">
         <div
-          className="p-6 max-w-md w-full shadow-md"
+          className="p-6 max-w-md w-full shadow-md ml-5 rounded-md "
           style={{ backgroundColor: "rgba(139, 197, 255, 0.3)" }}
         >
-          <form className="space-y-4">
+          <form className="space-y-3 p-1 ">
             <div>
               <input
                 type="text"

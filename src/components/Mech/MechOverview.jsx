@@ -4,6 +4,7 @@ import ProgramImage from '../../assets/images/3d-mech-org.jpg';
 import HatImage from '../../assets/images/hat.png';  // Import the floating hat image
 import GearImage1 from '../../assets/images/gear-a.png';  // Import the first floating gear image
 import GearImage2 from '../../assets/images/gear-b.png';  // Import the second floating gear image
+import car from '../../assets/Car split Down Model.jpg';
 
 // Import AOS and its CSS
 import AOS from 'aos';
@@ -40,7 +41,7 @@ function MechOverview() {
       {/* Right Part: Image */}
       <div className="flex-1 bg-white relative" data-aos="fade-left">  {/* Make container transparent */}
         <img
-          src={ProgramImage} // Use the imported image
+          src={car} // Use the imported image
           alt="Iphone"
           className="w-full h-96 object-contain"
         />

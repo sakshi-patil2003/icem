@@ -26,7 +26,7 @@ const MechApply = () => {
           >
             <div
               className="absolute top-[-15px] left-[-15px] text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
-              style={{ backgroundColor: "rgba(255, 87, 34, 0.9)" }}
+              style={{ backgroundColor: "white ",color:"DarkOrange" }}
             >
               1
             </div>
@@ -40,7 +40,7 @@ const MechApply = () => {
           >
             <div
               className="absolute top-[-15px] left-[-15px] text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
-              style={{ backgroundColor: "rgba(255, 87, 34, 0.9)" }}
+              style={{ backgroundColor: "white ",color:"DarkOrange" }}
             >
               2
             </div>
@@ -54,7 +54,7 @@ const MechApply = () => {
           >
             <div
               className="absolute top-[-15px] left-[-15px] text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
-              style={{ backgroundColor: "rgba(255, 87, 34, 0.9)" }}
+              style={{ backgroundColor: "white ",color:"DarkOrange" }}
             >
               3
             </div>
@@ -68,7 +68,7 @@ const MechApply = () => {
           >
             <div
               className="absolute top-[-15px] left-[-15px] text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
-              style={{ backgroundColor: "rgba(255, 87, 34, 0.9)" }}
+              style={{ backgroundColor: "white ",color:"DarkOrange" }}
             >
               4
             </div>
@@ -82,7 +82,7 @@ const MechApply = () => {
           >
             <div
               className="absolute top-[-15px] left-[-15px] text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
-              style={{ backgroundColor: "rgba(255, 87, 34, 0.9)" }}
+              style={{ backgroundColor: "white ",color:"DarkOrange"}}
             >
               5
             </div>
