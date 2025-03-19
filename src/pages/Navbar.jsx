@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Import images
-import logo from '../../src/assets/images/ICEM-logo.png';
+import logo from '../../src/assets/ICEM-Logo.png';
 import autonomousLogo from '../../src/assets/images/ICEM-Autonomous-logo.png';
 
 function Navbar() {
