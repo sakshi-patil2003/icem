@@ -94,6 +94,7 @@ const App = () => {
           </div>
         ))}
       </Slider>
+      
     </div>
   );
 };

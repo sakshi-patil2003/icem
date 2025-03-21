@@ -13,7 +13,18 @@ import raviImage from "../../assets/images/user-aids.png"; // Added missing impo
 import anitaImage from "../../assets/images/user-aids.png"; // Added missing import
 import rajeshImage from "../../assets/images/user-aids.png"; // Added missing import
 import newImage from "../../assets/images/testimony.webp"; // New Image for the right section
-
+import force from '../../assets/images/logos/force.png'
+import tata from "../../assets/images/logos/tata.png"
+import bluestar from "../../assets/images/logos/bluestar.png"
+import techM from "../../assets/images/logos/techM.png"
+import thys from "../../assets/images/logos/thys.png"
+import kpit from "../../assets/images/logos/kpit.png"
+import rudder from "../../assets/images/logos/rudder.png"
+import thai from "../../assets/images/logos/thai.png"
+import hettich from "../../assets/images/logos/hettich.png"
+import faurecia from "../../assets/images/logos/faurecia.png"
+import vander from "../../assets/images/logos/vander.png"
+import skf from "../../assets/images/logos/skf.png"
 function ItTestimonials() {
   const testimonials = [
     {
@@ -143,15 +154,20 @@ function ItTestimonials() {
   return (
     <div className="mb-8 px-8 md:px-16">
       {/* Main Heading outside the white rectangle */}
+      <div className="flex justify-around">
       <h2 className="text-4xl font-semibold text-[#001E5D] text-center mb-8">
         What Our Students Say
       </h2>
+      <h2 className="text-4xl font-semibold text-[#001E5D] text-center mb-8">
+        Our Recruiters
+      </h2>
+      </div>
 
       {/* Single white rectangle container */}
       <div className="bg-white shadow-lg">
         <div className="flex justify-between items-center gap-4">
           {/* Testimonial Section - 60% */}
-          <div className="w-3/5">
+          <div className="w-3/6">
             {/* Slick Slider */}
             <Slider {...settings}>
               {pairedTestimonials.map((pair, index) => (
@@ -204,14 +220,20 @@ function ItTestimonials() {
             </Slider>
           </div>
 
-          {/* Image Section - Right Side (40%) */}
-          <div className="w-2/5">
-            <img
-              src={newImage}
-              alt="Testimonial"
-              className="rounded-lg shadow-md w-full h-full transform scale-x-[-1]"
-            />
-          </div>
+           <div class="grid grid-cols-3 grid-rows-4  gap-4 ">
+               <img src={tata} alt="Image 1" class="w-full h-auto"/>
+               <img src={techM} alt="Image 2" class="w-full h-auto"/>
+               <img src={faurecia} alt="Image 3" class="w-full h-auto"/>
+               <img src={vander} alt="Image 4" class="w-full h-auto"/>
+               <img src={thys} alt="Image 5" class="w-full h-auto"/>
+               <img src={thai} alt="Image 6" class="w-full h-auto"/>
+               <img src={skf} alt="Image 7" class="w-full h-auto"/>
+               <img src={kpit} alt="Image 8" class="w-full h-auto"/>
+               <img src={rudder} alt="Image 9" class="w-full h-auto"/>
+               <img src={hettich} alt="Image 10" class="w-full h-auto"/>
+               <img src={bluestar} alt="Image 11" class="w-full h-auto"/>
+               <img src={force} alt="Image 12" class="w-full h-auto"/>
+            </div>
         </div>
       </div>
     </div>

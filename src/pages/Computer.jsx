@@ -9,6 +9,7 @@ import CompCarrer from "../components/Computer/CompCarrer";
 import CompRecruiter from "../components/Computer/CompRecruiter";
 import CompJoin from "../components/Computer/CompJoin";
 import AutoChatbot from "../components/AutoChatbot"; // Import AutoChatbot
+import MechJourny from "../components/Mech/MechJourny";
 
 function Computer() {
   return (
@@ -23,9 +24,9 @@ function Computer() {
       <CompHighlights />
       <CompJoin />
       <CompCarrer />
-      <CompRecruiter />
-
+      {/* <CompRecruiter /> */}
       <AutoChatbot />
+      <MechJourny/>
     </div>
   );
 }

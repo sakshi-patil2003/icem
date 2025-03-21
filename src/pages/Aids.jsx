@@ -8,6 +8,7 @@ import AidsBrochure from '../components/Aids/AidsBrochure';
 import AidsApply from '../components/Aids/AidsApply';
 import AidsTestimonials from '../components/Aids/AidsTestimonials';
 import AutoChatbot from '../components/AutoChatbot'; // Import AutoChatbot
+import MechJourny from '../components/Mech/MechJourny';
 
 function Aids() {
   return (
@@ -23,6 +24,7 @@ function Aids() {
       
       {/* Include the chatbot on this specific page */}
       <AutoChatbot />
+      <MechJourny/>
     </div>
   );
 }

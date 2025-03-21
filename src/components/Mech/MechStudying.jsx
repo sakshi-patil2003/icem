@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import std1 from '../../assets/images/std1.jpg';
 import std2 from '../../assets/images/std2.jpg';
-import indira from '../../assets/images/indiraCLG.jpg';
+import indira from '../../assets/images/idira.jpg';
 
 
 function MechStudying() {
@@ -18,7 +18,7 @@ function MechStudying() {
       {/* Left Side (Image Section with full height and 50% width) */}
       <div className="w-1/2 grid grid-cols-2 gap-4">
         {/* First Column: One Row with One Image */}
-        <div className="col-span-2 h-full flex">
+        <div className="col-span-2 h-full ">
           <img
             src={indira}
             alt="Image 1"

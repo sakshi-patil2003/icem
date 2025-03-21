@@ -7,7 +7,8 @@ import EntcPointers from '../components/Entc/EntcPointers'
 import EntcOfferings from '../components/Entc/EntcOfferings'
 import EntcStudying from '../components/Entc/EntcStudying'
 import EntcTestimonials from '../components/Entc/EntcTestimonials'
-import AutoChatbot from '../components/AutoChatbot'  // Import AutoChatbot
+import MechJourny from '../components/Mech/MechJourny'
+// import AutoChatbot from '../components/AutoChatbot'  // Import AutoChatbot
 
 function Entc() {
   return (
@@ -20,7 +21,7 @@ function Entc() {
         <EntcBrochure />  {/* Call the EntcBrochure component */} 
         <EntcApply />
         <EntcTestimonials />  {/* Call the EntcTestimonials component */}
-
+        <MechJourny/>
     </div>
   )
 }

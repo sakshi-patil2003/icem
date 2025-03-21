@@ -8,6 +8,7 @@ import ItHighlights from '../components/It/ItHighlights';
 import ItApply from '../components/It/ItApply';
 import ItTestimonials from '../components/It/ItTestimonials';
 import AutoChatbot from '../components/AutoChatbot'; // Import AutoChatbot
+import MechJourny from '../components/Mech/MechJourny';
 
 function It() {
   return (
@@ -20,9 +21,9 @@ function It() {
       <ItHighlights />  {/* Call the ItHighlights component */}
       <ItApply />  {/* Call the ItApply component */}
       <ItTestimonials />  {/* Call the ItTestimonials component */}
-
       {/* Include the chatbot on this page */}
       <AutoChatbot />
+      <MechJourny/>
     </div>
   );
 }

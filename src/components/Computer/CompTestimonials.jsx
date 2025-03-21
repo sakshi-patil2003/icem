@@ -6,8 +6,19 @@ import ravi1Image from "../../assets/images/user.png";
 import nehaImage from "../../assets/images/user.png";
 import ravi2Image from "../../assets/images/user.png";
 import aishaImage from "../../assets/images/user.png";
-import newImage from "../../assets/images/testimony.webp"; // New Image for the right section
-
+// import newImage from "../../assets/images/testimony.webp"; // New Image for the right section
+import tata from '../../assets/images/logos/tata.png'
+import techM from '../../assets/images/logos/techM.png'
+import faurecia from '../../assets/images/logos/faurecia.png'
+import vander from '../../assets/images/logos/vander.png'
+import thys from '../../assets/images/logos/thys.png'
+import thai from '../../assets/images/logos/thai.png'
+import skf from '../../assets/images/logos/skf.png'
+import bluestar from '../../assets/images/logos/bluestar.png'
+import force from '../../assets/images/logos/force.png'
+import kpit from '../../assets/images/logos/kpit.png'
+import rudder from '../../assets/images/logos/rudder.png'
+import hettich from '../../assets/images/logos/hettich.png'
 function Testimonials() {
   const testimonials = [
     {
@@ -136,10 +147,12 @@ function Testimonials() {
 
   return (
     <div className="mb-4 px-8 md:px-16">
-      {/* Main Heading outside the white rectangle */}
+    <div className="flex justify-around">  {/* Main Heading outside the white rectangle */}
       <h2 className="text-4xl font-semibold text-[#6095ff] text-center mb-8">
         What Our Students Say
       </h2>
+      <h2 className="text-4xl font-semibold text-[#6095ff] text-center mb-8">
+        Our Recruiters      </h2></div>
 
       {/* Single white rectangle container */}
       <div className="bg-white shadow-lg">
@@ -199,13 +212,27 @@ function Testimonials() {
           </div>
 
           {/* New Section - 40% with Image */}
-          <div className="w-2/5">
+          {/* <div className="w-2/5">
             <img
               src={newImage}
               alt="New Image"
               className="w-full h-full object-cover shadow-lg transform scale-x-[-1]"
             />
-          </div>
+          </div> */}
+          <div class="grid grid-cols-3 grid-rows-4  gap-4 ">
+                    <img src={tata} alt="Image 1" class="w-full h-auto"/>
+                    <img src={techM} alt="Image 2" class="w-full h-auto"/>
+                    <img src={faurecia} alt="Image 3" class="w-full h-auto"/>
+                    <img src={vander} alt="Image 4" class="w-full h-auto"/>
+                    <img src={thys} alt="Image 5" class="w-full h-auto"/>
+                    <img src={thai} alt="Image 6" class="w-full h-auto"/>
+                    <img src={skf} alt="Image 7" class="w-full h-auto"/>
+                    <img src={kpit} alt="Image 8" class="w-full h-auto"/>
+                    <img src={rudder} alt="Image 9" class="w-full h-auto"/>
+                    <img src={hettich} alt="Image 10" class="w-full h-auto"/>
+                    <img src={bluestar} alt="Image 11" class="w-full h-auto"/>
+                    <img src={force} alt="Image 12" class="w-full h-auto"/>
+                </div>
         </div>
       </div>
     </div>
