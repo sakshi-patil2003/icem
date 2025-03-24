@@ -86,16 +86,7 @@ function EntcHero() {
                   {/* Add city options here */}
                 </select>
               </div>
-              <div>
-                <select
-                  id="discipline"
-                  className="w-full p-1.5 bg-white text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
-                  required
-                >
-                  <option value="">Select Discipline</option>
-                  {/* Add discipline options here */}
-                </select>
-              </div>
+              
               <div>
                 <select
                   id="course"
@@ -103,7 +94,11 @@ function EntcHero() {
                   required
                 >
                   <option value="">Select Course</option>
-                  {/* Add course options here */}
+                  <option value="IT">Information Technology</option>
+                  <option value="Mechanical">Mechanical Engineering</option>
+                  <option value="ENTC">Electronics and Telecommunication Engineering</option>
+                  <option value="Computer">Computer Engineering</option>
+                  <option value="AIDS">Artificial Intelligence and Data Science (AIDS)</option>
                 </select>
               </div>
               <div>

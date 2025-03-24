@@ -90,16 +90,8 @@ function ItHero() {
                   {/* Add city options here */}
                 </select>
               </div>
-              <div>
-                <select
-                  id="discipline"
-                  className="w-full p-1.5 bg-gradient-to-r from-[#e1f1fb] via-[#c1d9f2] to-[#a0c4e7] text-black rounded border border-[#001E5D] focus:outline-none focus:ring-2 focus:ring-[#001E5D]"
-                  required
-                >
-                  <option value="">Select Discipline</option>
-                  {/* Add discipline options here */}
-                </select>
-              </div>
+
+              {/* Course Dropdown with Added Options */}
               <div>
                 <select
                   id="course"
@@ -107,9 +99,14 @@ function ItHero() {
                   required
                 >
                   <option value="">Select Course</option>
-                  {/* Add course options here */}
+                  <option value="IT">Information Technology</option>
+                  <option value="Mechanical">Mechanical Engineering</option>
+                  <option value="ENTC">Electronics and Telecommunication</option>
+                  <option value="Computer">Computer Engineering</option>
+                  <option value="AIDS">Artificial Intelligence and Data Science</option>
                 </select>
               </div>
+
               <div>
                 <select
                   id="program"

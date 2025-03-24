@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import std1 from '../../assets/images/std1.jpg';
 import std2 from '../../assets/images/std2.jpg';
-import indira from '../../assets/images/idira.jpg';
+import indira from '../../assets/images/ICEM 1.jpg';
 
 
 function MechStudying() {
@@ -97,7 +97,7 @@ function MechStudying() {
           <div className="bg-[#fff4e6] p-4 shadow-lg shadow-[#ffcc66]/50 flex justify-between items-center rounded-lg">
             <span className="flex items-center">
               <FaHandsHelping className="text-[#008000] mr-4 text-4xl" />
-              <span className="text-sm text-[#8B4513]">HANDS-ON TRAINING IN LABS</span>
+              <span className="text-sm text-[#8B4513]">HANDS-ON TRAINING IN WORKSHOPS </span>
             </span>
           </div>
           {/* Card 6 */}

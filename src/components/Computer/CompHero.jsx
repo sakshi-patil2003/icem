@@ -138,24 +138,19 @@ function CompHero() {
                 {/* Add city options here */}
               </select>
             </div>
-            <div>
-              <select
-                id="discipline"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#8BC5FF] focus:outline-none focus:ring-2 focus:ring-[#006BB3]"
-                required
-              >
-                <option value="">Select Discipline</option>
-                {/* Add discipline options here */}
-              </select>
-            </div>
+            
             <div>
               <select
                 id="course"
                 className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#8BC5FF] focus:outline-none focus:ring-2 focus:ring-[#006BB3]"
                 required
               >
-                <option value="">Select Course</option>
-                {/* Add course options here */}
+                 <option value="">Select Course</option>
+                  <option value="IT">Information Technology</option>
+                  <option value="Mechanical">Mechanical Engineering</option>
+                  <option value="ENTC">Electronics and Telecommunication Engineering</option>
+                  <option value="Computer">Computer Engineering</option>
+                  <option value="AIDS">Artificial Intelligence and Data Science (AIDS)</option>
               </select>
             </div>
             <div>

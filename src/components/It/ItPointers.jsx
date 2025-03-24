@@ -28,7 +28,7 @@ function ItPointers() {
             <FaLaptopCode size={40} className="text-[#001E5D]" />
             <div className="text-center">
               <h2 className="text-[#001E5D]">Program Format</h2>
-              <p className="mt-2 text-2xl font-semibold text-[#001E5D]">Online</p>
+              <p className="mt-2 text-2xl font-semibold text-[#001E5D]">Offline</p>
             </div>
           </div>
         </div>
@@ -42,7 +42,7 @@ function ItPointers() {
             <FaNetworkWired size={40} className="text-[#001E5D]" />
             <div className="text-center">
               <h2 className="text-[#001E5D]">Duration</h2>
-              <p className="mt-2 text-2xl font-semibold text-[#001E5D]">3 Years</p>
+              <p className="mt-2 text-2xl font-semibold text-[#001E5D]">4 Years</p>
             </div>
           </div>
         </div>

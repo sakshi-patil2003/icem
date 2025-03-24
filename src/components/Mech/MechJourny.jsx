@@ -106,7 +106,7 @@ const MechJourny = () => {
 
   return (
     <div className="w-full h-auto bg-white my-2 shadow-lg" >
-    <h3 className='text-center font-bold text-2xl text-[#0c3249]  mb-6   '>Alumani Speak</h3>
+    <h3 className='text-center font-bold text-2xl text-[#0c3249]  mb-6   '>Alumni Speak</h3>
          {/* Slider for the 3 Successor Cards */}
       <Slider {...settings}>
         {successors.map((successor) => (

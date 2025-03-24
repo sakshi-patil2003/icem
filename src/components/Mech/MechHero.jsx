@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import backgroundImage from "../../assets/images/mech-hero.jpg"; 
-import gearImage from "../../assets/images/gears.png"; 
+import backgroundImage from "../../assets/images/mech-hero.jpg";
+import gearImage from "../../assets/images/gears.png";
 import MechForklift from "./MechForklift"; // Import the MechForklift component
 
 function MechHero() {
@@ -38,7 +38,7 @@ function MechHero() {
     const timeout = setTimeout(handleTyping, isDeleting ? 80 : 120);
 
     return () => clearTimeout(timeout);
-  }, [currentText, isDeleting, currentWordIndex]); // Removed 'words' dependency
+  }, [currentText, isDeleting, currentWordIndex]);
 
   return (
     <div
@@ -66,7 +66,7 @@ function MechHero() {
       />
 
       {/* Left side content */}
-      <div className="flex flex-col items-start z-20  w-full hidden md:block sm:block">
+      <div className="flex flex-col items-start z-20 w-full hidden md:block sm:block">
         <h1 className="text-6xl md:text-5xl syne-regular text-[#ffffff] font-semibold leading-tight mb-6">
           Lead the Mechanical{" "}
           <span className="relative inline-block">
@@ -82,7 +82,7 @@ function MechHero() {
       </div>
 
       {/* Right side form container */}
-      <div className="flex justify-end  z-20 w-full ">
+      <div className="flex justify-end z-20 w-full ">
         <div
           className="p-6 max-w-md w-full shadow-md ml-5 rounded-md "
           style={{ backgroundColor: "rgba(139, 197, 255, 0.3)" }}
@@ -135,16 +135,7 @@ function MechHero() {
                 {/* Add city options here */}
               </select>
             </div>
-            <div>
-              <select
-                id="discipline"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
-                required
-              >
-                <option value="">Select Discipline</option>
-                {/* Add discipline options here */}
-              </select>
-            </div>
+
             <div>
               <select
                 id="course"
@@ -152,7 +143,11 @@ function MechHero() {
                 required
               >
                 <option value="">Select Course</option>
-                {/* Add course options here */}
+                <option value="Mech">Mechanical Engineering</option>
+                <option value="AI">Artificial Intelligence</option>
+                <option value="IT">Information Technology</option>
+                <option value="CS">Computer Science</option>
+                <option value="AIDS">Artificial Intelligence and Data Science</option> {/* Added the new course option */}
               </select>
             </div>
             <div>

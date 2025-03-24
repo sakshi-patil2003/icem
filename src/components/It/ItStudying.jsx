@@ -7,9 +7,9 @@ import {
   FaHandsHelping,
   FaChartLine,
 } from "react-icons/fa";
-import MyImage from "../../assets/images/it-server.jpg";
-import Image1 from "../../assets/images/it-girl.jpg";
-import Image2 from "../../assets/images/it-boy.jpg";
+import indira from "../../assets/images/ICEM 1.jpg";
+import Image1 from "../../assets/images/app1.JPG";
+import Image2 from "../../assets/images/app2.JPG";
 
 function ItStudying() {
   return (
@@ -17,30 +17,29 @@ function ItStudying() {
       {/* Left Side (Image Section with full height and 50% width) */}
       <div className="w-1/2 grid grid-cols-2 gap-4">
         {/* First Column: One Row with One Image */}
-        <div className="col-span-1 h-full flex flex-col justify-center">
+        <div className="col-span-2 h-full ">
           <img
-            src={MyImage}
+            src={indira}
             alt="Image 1"
             className="w-full h-full object-cover"
           />
         </div>
 
         {/* Second Column: Two Rows with Two Images */}
-        <div className="col-span-1 grid grid-rows-2 gap-2 h-full">
-          <div className="row-span-1 h-full">
+        <div className=" grid grid-rows-1 gap-2 h-full">
+          <div className="row-span-1 h-full flex gap-4">
             <img
               src={Image1}
               alt="Image 2"
               className="w-full h-full object-cover"
             />
-          </div>
-          <div className="row-span-1 h-full">
-            <img
+              <img
               src={Image2}
               alt="Image 3"
               className="w-full h-full object-cover"
             />
           </div>
+          
         </div>
       </div>
 
