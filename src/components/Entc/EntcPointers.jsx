@@ -17,48 +17,36 @@ function EntcPointers() {
   }, []);
 
   return (
-    <div className="px-8 md:px-16 py-12 poppins-regular">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-16">
+    <div className="px-8 md:px-10 lg:px-16 py-6 md:py-12 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8 lg:gap-16">
         {/* Card 1: Program Format */}
         <div
-          className="bg-[#9FEDD7] p-6 z-10 shadow-lg flex items-center justify-center"
-          data-aos="fade-up" // AOS animation trigger
+          className="bg-[#9FEDD7] p-6 shadow-lg flex flex-col items-center text-center"
+          data-aos="fade-up"
         >
-          <div className="flex items-center justify-center mr-4 space-x-4">
-            <FaCog size={40} className="text-[#026670]" />
-            <div className="text-center">
-              <h2>Program Format</h2>
-              <p className="mt-2 text-2xl font-semibold">Offline</p>
-            </div>
-          </div>
+          <FaCog size={50} className="text-[#026670]" />
+          <h2 className="text-lg  text-sm md:text-2xl font-medium">Program Format</h2>
+          <p className="mt-2 text-sm md:text-2xl font-bold">Offline</p> {/* Responsive text */}
         </div>
 
         {/* Card 2: Duration */}
         <div
-          className="bg-[#9FEDD7] p-6 z-10 shadow-lg flex items-center justify-center"
+          className="bg-[#9FEDD7] p-6 shadow-lg flex flex-col items-center text-center"
           data-aos="fade-up"
         >
-          <div className="flex items-center justify-center mr-4 space-x-4">
-            <FaTools size={40} className="text-[#026670]" />
-            <div className="text-center">
-              <h2>Duration</h2>
-              <p className="mt-2 text-2xl font-semibold">4 Years</p>
-            </div>
-          </div>
+          <FaTools size={50} className="text-[#026670] " />
+          <h2 className="text-lg text-sm md:text-2xl font-medium">Duration</h2>
+          <p className="mt-2 text-sm md:text-2xl font-bold">4 Years</p> {/* Responsive text */}
         </div>
 
         {/* Card 3: Program Fees */}
         <div
-          className="bg-[#9FEDD7] p-6 z-10 shadow-lg flex items-center justify-center"
+          className="bg-[#9FEDD7] p-6 shadow-lg flex flex-col items-center text-center"
           data-aos="fade-up"
         >
-          <div className="flex items-center justify-center mr-4 space-x-4">
-            <FaIndustry size={40} className="text-[#026670]" />
-            <div className="text-center">
-              <h2>Program Fees</h2>
-              <p className="mt-2 text-2xl font-semibold">Rs. 108000/-</p>
-            </div>
-          </div>
+          <FaIndustry size={50} className="text-[#026670]" />
+          <h2 className="text-lg text-sm md:text-2xl font-medium">Program Fees</h2>
+          <p className="mt-2 text-sm md:text-2xl font-bold">Rs. 1,08,000/-</p> {/* Responsive text */}
         </div>
       </div>
     </div>

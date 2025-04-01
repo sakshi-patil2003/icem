@@ -9,20 +9,34 @@ import AidsApply from '../components/Aids/AidsApply';
 import AidsTestimonials from '../components/Aids/AidsTestimonials';
 import AutoChatbot from '../components/AutoChatbot'; // Import AutoChatbot
 import MechJourny from '../components/Mech/MechJourny';
+import AidsHighlights from '../components/Aids/AidsHighlights';
+import AidsInnovation from '../components/Aids/AidsInnovation';
+import WhyChooseICEM from '../components/Aids/WhyChooseICEM';
+import CareerProspects from '../components/Aids/CareerProspects';
+import AdmissionsCTA from '../components/Aids/AdmissionsCTA';
+import AidsBanner from '../components/Aids/AidsBanner';
+import AidsRecruiters from '../components/Aids/AidsRecruiters';
+import AdmissionsContainer from '../components/Aids/AdmissionsContainer';
 
 function Aids() {
   return (
     <div>
       <AidsHero />  {/* Hero component for Aids */}
-      <AidsPointers />  {/* Pointers section */}
-      <AidsOverview />  {/* Overview section */}
-      <AidsAbout />  {/* About section */}
-      <AidsBrochure />  {/* Brochure section */}
-      <AidsOfferings />  {/* Offerings section */}
-      <AidsApply />  {/* Apply section */}
-      <AidsTestimonials />  {/* Testimonials section */}
-      
-      {/* Include the chatbot on this specific page */}
+      <AidsPointers />  
+      <AidsInnovation/> 
+      <AidsOverview />  
+      <WhyChooseICEM/> 
+      <AidsAbout />  
+      <AidsBrochure />  
+      <AidsBanner/>
+      <AidsRecruiters/>
+      <AidsOfferings />  
+      <AidsHighlights/>  
+      <CareerProspects/>
+      <AdmissionsCTA/>
+      <AidsApply />  
+      <AdmissionsContainer/>
+      <AidsTestimonials />  
       <AutoChatbot />
       <MechJourny/>
     </div>

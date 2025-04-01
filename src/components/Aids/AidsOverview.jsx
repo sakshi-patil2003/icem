@@ -1,71 +1,87 @@
 import React, { useEffect } from 'react';
-// Import the images
-import ProgramImage from '../../assets/images/robot-overview.png'; // Replace with the correct image path
-import HatImage from '../../assets/images/hat.png';  // Import the floating hat image
+import ProgramImage from '../../assets/images/robothero.avif'; // Robot image
+import HatImage from '../../assets/images/hat.png'; // Floating hat image
 
-// Import AOS and its CSS
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function AidsOverview() {
   useEffect(() => {
-    // Initialize AOS
     AOS.init({
-      duration: 1000, // Animation duration (in ms)
-      easing: 'ease-in-out', // Easing function for the animation
-      once: true, // Whether the animation should happen only once
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
     });
   }, []);
 
   return (
     <div
-      className="flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0 md:space-x-8 px-8 md:px-16 py-3 md:py-6 font-baskerville-regular"
+      className="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0 md:space-x-8 px-8 md:px-16 font-baskerville-regular overflow-hidden"
       style={{
         background: 'linear-gradient(to right, #0c3249, #1e5f76, #41b9d0)',
       }}
     >
-      {/* Right Part: Image (formerly left) */}
-      <div className="flex-1 flex items-center" data-aos="fade-left">  
+      {/* Right Part: Image (formerly left), hidden on mobile */}
+      <div
+        className="hidden sm:flex flex-1 items-center justify-center relative"
+        data-aos="fade-left"
+      >
         <img
-          src={ProgramImage} // Use the imported image
+          src={ProgramImage}
           alt="AIDS Program"
-          className="w-full h-96 object-contain"
+          className="w-48 sm:w-64 md:w-full h-[350px] sm:h-[450px] md:h-[500px] object-contain animate-float-large"
         />
       </div>
 
-      {/* Left Part: Heading and Paragraph (formerly right) */}
-      <div className="flex-1" data-aos="fade-right">
-        <h2 className="text-3xl font-bold text-[#f4f4f4] mb-4 relative">
-          {/* Floating Hat Above the "P" */}
+      {/* Left Part: Heading and Paragraph */}
+      <div className="flex-1 pt-8 py-4 md:py-8 text-center sm:text-left" data-aos="fade-right">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#f4f4f4] mb-2 relative">
           <img
             src={HatImage}
             alt="Hat"
-            className="absolute left-[-25px] top-[-38px] w-16 h-16 animate-floating" // Apply floating animation class
+            className="hidden sm:block absolute left-[-25px] top-[-38px] w-12 sm:w-16 h-12 sm:h-16 animate-floating"
           />
           Program Overview
         </h2>
-        <p className="text-2xl text-[#f4f4f4] tracking-wide">
-          The AIDS Research and Development program focuses on empowering students with the knowledge and skills to innovate and lead in the field of medical research. The program offers a comprehensive curriculum, hands-on experiences, and collaborative projects to prepare students for global challenges in the AIDS healthcare industry. Join us to make a difference!
+        <p className="text-base  md:text-2xl text-[#f4f4f4] tracking-wide ">
+          Artificial Intelligence and Data Science are revolutionizing industries, from self-driving cars and AI-powered
+          healthcare to predictive analytics and cybersecurity. At Indira College of Engineering & Management (ICEM),
+          Pune, we equip future tech leaders with advanced AI knowledge, real-world applications, and hands-on
+          experience to transform the digital world.
+        </p>
+        <p className="mt-4 text-base sm:text-lg md:text-2xl text-[#f4f4f4] tracking-wide ">
+          If you dream of creating intelligent software, analyzing massive datasets, or building next-gen AI solutions,
+          then AIDS at ICEM is your gateway to success!
         </p>
       </div>
 
       {/* Floating animation CSS */}
       <style>{`
-        @keyframes floating {
-          0% {
-            transform: translateY(0); /* Start at original position */
-          }
-          50% {
-            transform: translateY(-10px); /* Move up a bit */
-          }
-          100% {
-            transform: translateY(0); /* Return to original position */
-          }
+      @keyframes floating {
+        0%, 100% {
+          transform: translateY(0);
         }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
 
-        .animate-floating {
-          animation: floating 3s ease-in-out infinite; /* Apply floating animation */
+      @keyframes float-large {
+        0%, 100% {
+          transform: translateY(0);
         }
+        50% {
+          transform: translateY(-15px);
+        }
+      }
+
+      .animate-floating {
+        animation: floating 3s ease-in-out infinite;
+      }
+
+      .animate-float-large {
+        animation: float-large 4s ease-in-out infinite;
+      }
       `}</style>
     </div>
   );

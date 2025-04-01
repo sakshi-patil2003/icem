@@ -9,19 +9,7 @@ import meeraImage from "../../assets/images/user-green.png";
 import karanImage from "../../assets/images/user-green.png";
 import nishaImage from "../../assets/images/user-green.png";
 import aartiImage from "../../assets/images/user-green.png";
-// import newImage from "../../assets/images/testimony.webp"; // New Image for the right section
-import force from '../../assets/images/logos/force.png'
-import tata from "../../assets/images/logos/tata.png"
-import bluestar from "../../assets/images/logos/bluestar.png"
-import techM from "../../assets/images/logos/techM.png"
-import thys from "../../assets/images/logos/thys.png"
-import kpit from "../../assets/images/logos/kpit.png"
-import rudder from "../../assets/images/logos/rudder.png"
-import thai from "../../assets/images/logos/thai.png"
-import hettich from "../../assets/images/logos/hettich.png"
-import faurecia from "../../assets/images/logos/faurecia.png"
-import vander from "../../assets/images/logos/vander.png"
-import skf from "../../assets/images/logos/skf.png"
+
 function EntcTestimonials() {
   const testimonials = [
     {
@@ -67,172 +55,59 @@ function EntcTestimonials() {
       image: nishaImage,
     },
     {
-        name: "Vikram Singh - Junior Electronics Engineer",
-        department: "Electrical & Electronics Engineering",
-        year: "Batch-24",
-        text: '"ICEM equipped me with the essential skills and hands-on training required to thrive in the electronics sector. The professors and lab facilities are excellent!"',
-        image: vikramImage,
-      },
-    {
       name: "Aarti Sharma - Electronics Engineering Trainee",
       department: "Electrical & Electronics Engineering",
       year: "Batch-25",
       text: '"I gained immense practical knowledge through hands-on projects and internships at ICEM, which helped me secure a full-time position in electronics design."',
       image: aartiImage,
     },
-    {
-      name: "Nisha Gupta - Junior Electronics Design Engineer",
-      department: "Electrical & Electronics Engineering",
-      year: "Batch-25",
-      text: '"The exposure to cutting-edge electronics technologies and real-world applications at ICEM was the highlight of my learning experience."',
-      image: nishaImage,
-    },
-    {
-      name: "Aarti Sharma - Junior Electronics Engineer",
-      department: "Electrical & Electronics Engineering",
-      year: "Batch-25",
-      text: '"ICEM’s faculty and infrastructure provided the perfect foundation for my career in electronics engineering. The hands-on projects were crucial in shaping my skills."',
-      image: aartiImage,
-    },
-    {
-      name: "Simran Kaur - Electronics Engineer Trainee",
-      department: "Electrical & Electronics Engineering",
-      year: "Batch-23",
-      text: '"ICEM provided the perfect balance of theoretical knowledge and practical exposure that helped me transition smoothly into the electronics industry."',
-      image: simranImage,
-    },
-    {
-      name: "Vikram Singh - Junior Electronics Engineer",
-      department: "Electrical & Electronics Engineering",
-      year: "Batch-24",
-      text: '"I learned not just the fundamentals of electronics, but also the latest industry trends and technologies that are now shaping the field."',
-      image: vikramImage,
-    },
   ];
 
   const settings = {
-    dots: true, // Navigation dots
+    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1, // Show 1 slide at a time (to ensure each slide holds 2 items)
+    slidesToShow: 3,
     slidesToScroll: 1,
-    vertical: false, // Change to false for horizontal scrolling
-    centerMode: true, // Center the active slide
-    centerPadding: "0", // No padding around centered slide
-    autoplay: true, // Enable autoplay
-    autoplaySpeed: 3000, // Set autoplay speed (3 seconds here)
-    pauseOnHover: false, // Disable stopping on hover
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
     responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          vertical: false, // Adjust for responsiveness
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          vertical: false, // Adjust for responsiveness
-        },
-      },
+      { breakpoint: 768, settings: { slidesToShow: 2, slidesToScroll: 1 } },
+      { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } },
     ],
   };
 
-  // Function to pair testimonials for each slide
-  const pairedTestimonials = [];
-  for (let i = 0; i < testimonials.length; i += 2) {
-    pairedTestimonials.push([testimonials[i], testimonials[i + 1]]);
-  }
-
   return (
-    <div className="mb-8 px-8 md:px-16 ">
-      {/* Main Heading outside the white rectangle */}
-     <div className="flex justify-around">
-     <h2 className="text-4xl font-semibold text-[#00B5A0] text-center mb-8">
+    <div className="px-4 md:px-10">
+      <h2 className="text-2xl md:text-4xl mt-4 font-semibold text-[#026670] text-center">
         What Our Students Say
       </h2>
-      <h2 className="text-4xl font-semibold text-[#00B5A0] text-center mb-8">
-        Our Recruiters
-      </h2>
-     </div>
 
-      {/* Single white rectangle container */}
-      <div className="bg-white shadow-lg">
-        <div className="flex justify-between items-center gap-4">
-          {/* Testimonial Section - 60% */}
-          <div className="w-3/6">
-            {/* Slick Slider */}
-            <Slider {...settings}>
-              {pairedTestimonials.map((pair, index) => (
-                <div key={index} className="flex flex-col">
-                  {/* First Card: Profile and Testimonial */}
-                  <div className="p-6 flex flex-col mb-6 bg-[#E0F7F1] border border-[#00B5A0] rounded-lg">
-                    <div className="flex items-center mb-4">
-                      <img
-                        src={pair[0].image}
-                        alt={pair[0].name}
-                        className="w-12 h-12 rounded-full mr-4"
-                      />
-                      <div className="text-left">
-                        <p className="text-lg font-semibold text-[#2F2F2F]">
-                          {pair[0].name}
-                        </p>
-                        <hr className="my-1 border-t border-gray-300" />
-                        <p className="text-sm text-[#00B5A0]">
-                          {pair[0].department} | {pair[0].year}
-                        </p>
-                      </div>
-                    </div>
-                    <p className="text-[#2F2F2F]">{pair[0].text}</p>
-                  </div>
-
-                  {/* Second Card (for the next testimonial) */}
-                  {pair[1] && (
-                    <div className="p-6 flex flex-col mb-6 bg-[#E0F7F1] border border-[#00B5A0] rounded-lg">
-                      <div className="flex items-center mb-4">
-                        <img
-                          src={pair[1].image}
-                          alt={pair[1].name}
-                          className="w-12 h-12 rounded-full mr-4"
-                        />
-                        <div className="text-left">
-                          <p className="text-lg font-semibold text-[#2F2F2F]">
-                            {pair[1].name}
-                          </p>
-                          <hr className="my-1 border-t border-gray-300" />
-                          <p className="text-sm text-[#00B5A0]">
-                            {pair[1].department} | {pair[1].year}
-                          </p>
-                        </div>
-                      </div>
-                      <p className="text-[#2F2F2F]">{pair[1].text}</p>
-                    </div>
-                  )}
+      <div className="bg-white shadow-lg p-4 sm:p-6">
+        <Slider {...settings}>
+          {testimonials.map((testimonial, i) => (
+            <div key={i} className="p-2">
+              <div className="bg-[#026670] border-4 border-[#00B5A0] rounded-lg p-4 sm:p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 w-[90%] sm:w-auto mx-auto sm:mx-0 h-auto sm:h-[320px]">
+                {/* Profile Icon at the Top */}
+                <div className="flex justify-center mb-4">
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-white shadow-lg"
+                  />
                 </div>
-              ))}
-            </Slider>
-          </div>
 
-          {/* New Section - 40% with Image */}
-          <div class="grid grid-cols-3 grid-rows-4 ">
-                    <img src={tata} alt="Image 1" class="w-full h-auto"/>
-                    <img src={techM} alt="Image 2" class="w-full h-auto"/>
-                    <img src={faurecia} alt="Image 3" class="w-full h-auto"/>
-                    <img src={vander} alt="Image 4" class="w-full h-auto"/>
-                    <img src={thys} alt="Image 5" class="w-full h-auto"/>
-                    <img src={thai} alt="Image 6" class="w-full h-auto"/>
-                    <img src={skf} alt="Image 7" class="w-full h-auto"/>
-                    <img src={kpit} alt="Image 8" class="w-full h-auto"/>
-                    <img src={rudder} alt="Image 9" class="w-full h-auto"/>
-                    <img src={hettich} alt="Image 10" class="w-full h-auto"/>
-                    <img src={bluestar} alt="Image 11" class="w-full h-auto"/>
-                    <img src={force} alt="Image 12" class="w-full h-auto"/>
-                </div>
-        </div>
+                <p className="text-lg font-semibold text-white text-center">{testimonial.name}</p>
+                <p className="text-sm text-[#d3d1d1] text-center">
+                  {testimonial.department} | {testimonial.year}
+                </p>
+                <hr className="my-1 border-t border-gray-300" />
+                <p className="text-[#e1dede] text-center">{testimonial.text}</p>
+              </div>
+            </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );

@@ -2,12 +2,12 @@ import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import AOS from 'aos';  // Import AOS
 import 'aos/dist/aos.css';  // Import AOS CSS
-import offer1Image from '../../assets/images/aids-off-6.jpg';  // Keep the original image path
-import offer2Image from '../../assets/images/aids-off-4.jpg';  // Keep the original image path
-import offer3Image from '../../assets/images/aids-off-3.jpg';  // Keep the original image path
-import offer4Image from '../../assets/images/aids-off-5.jpg';  // Keep the original image path
-import offer5Image from '../../assets/images/aids-off-2.jpg';  // Keep the original image path
-import offer6Image from '../../assets/images/aids-off-1.jpg';  // Keep the original image path
+import offer1Image from '../../assets/images/aids-off-6.avif';  // Keep the original image path
+import offer2Image from '../../assets/images/aids-off-4.avif';  // Keep the original image path
+import offer3Image from '../../assets/images/aids-off-3.avif';  // Keep the original image path
+import offer4Image from '../../assets/images/aids-off-5.avif';  // Keep the original image path
+import offer5Image from '../../assets/images/aids-off-2.avif';  // Keep the original image path
+import offer6Image from '../../assets/images/aids-off-1.avif';  // Keep the original image path
 import backgroundImage from '../../assets/images/dots.jpg';  // Import your background image
 
 function AidsOfferings() {
@@ -40,7 +40,7 @@ function AidsOfferings() {
 
   return (
     <div 
-      className="px-8 md:px-16 py-6 md:py-8 poppins-regular"
+      className="px-8 md:px-16 py-6 md:py-8 poppins-regular mt-4"
       style={{
         backgroundImage: `url(${backgroundImage})`,  // Use the imported image here
         backgroundSize: 'cover', // Ensures the image covers the full background
@@ -52,7 +52,8 @@ function AidsOfferings() {
         AIDS Program Offerings
       </h2>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4 md:gap-x-20 z-5 justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-2 md:gap-x-10 justify-center">
+
         {/* AI Research & Applications */}
         <div
           className="bg-[#41b9d0] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
@@ -61,10 +62,10 @@ function AidsOfferings() {
           <img
             src={offer2Image}
             alt="AI Research"
-            className="w-full h-48 object-cover mb-4"
+            className="w-full h-40 md:h-48 object-cover mb-4"
           />
-          <div className="text-center px-4 p-2">
-            <h3 className="text-xl font-bold text-white mb-2">AI Research & Applications</h3>
+          <div className="text-center ">
+            <h3 className="text-lg md:text-xl font-bold text-white mb-2">AI Research & Applications</h3>
             <p className="text-base text-white">Exploring cutting-edge AI research and practical applications in real-world scenarios.</p>
           </div>
         </div>
@@ -77,10 +78,10 @@ function AidsOfferings() {
           <img
             src={offer1Image}
             alt="Data Science"
-            className="w-full h-48 object-cover mb-4"
+            className="w-full h-40 md:h-48 object-cover mb-4"
           />
-          <div className="text-center px-4 p-2">
-            <h3 className="text-xl font-bold text-white mb-2">Data Science & Analytics</h3>
+          <div className="text-center ">
+            <h3 className="text-lg md:text-xl font-bold text-white mb-2">Data Science & Analytics</h3>
             <p className="text-base text-white">Learn how to analyze and interpret complex data to make data-driven decisions in engineering and technology.</p>
           </div>
         </div>
@@ -93,10 +94,10 @@ function AidsOfferings() {
           <img
             src={offer3Image}
             alt="Machine Learning"
-            className="w-full h-48 object-cover mb-4"
+            className="w-full h-40 md:h-48  object-cover mb-4"
           />
-          <div className="text-center px-4 p-2">
-            <h3 className="text-xl font-bold text-white mb-2">Machine Learning & Algorithms</h3>
+          <div className="text-center ">
+            <h3 className="text-lg md:text-xl font-bold text-white mb-2">Machine Learning & Algorithms</h3>
             <p className="text-base text-white">Develop machine learning models and learn how to apply algorithms to real-world data problems.</p>
           </div>
         </div>
@@ -109,10 +110,10 @@ function AidsOfferings() {
           <img
             src={offer5Image}
             alt="Robotics"
-            className="w-full h-48 object-cover mb-4"
+            className="w-full h-40 md:h-48 object-cover mb-4"
           />
-          <div className="text-center px-4 p-2">
-            <h3 className="text-xl font-bold text-white mb-2">Robotics & Automation</h3>
+          <div className="text-center ">
+            <h3 className="text-lg md:text-xl font-bold text-white mb-2">Robotics & Automation</h3>
             <p className="text-base text-white">Study how robots are designed, built, and programmed to perform tasks autonomously in a variety of fields.</p>
           </div>
         </div>
@@ -125,10 +126,10 @@ function AidsOfferings() {
           <img
             src={offer4Image}
             alt="Software Engineering"
-            className="w-full h-48 object-cover mb-4"
+            className="w-full h-40 md:h-48 object-cover mb-4"
           />
-          <div className="text-center px-4 p-2">
-            <h3 className="text-xl font-bold text-white mb-2">Software Engineering & Development</h3>
+          <div className="text-center ">
+            <h3 className="text-lg md:text-xl font-bold text-white mb-2">Software Engineering & Development</h3>
             <p className="text-base text-white">Learn to design, develop, and deploy high-quality software systems in various domains.</p>
           </div>
         </div>
@@ -141,10 +142,10 @@ function AidsOfferings() {
           <img
             src={offer6Image}
             alt="Engineering Research"
-            className="w-full h-48 object-cover mb-4"
+            className="w-full h-40 md:h-48 object-cover mb-4"
           />
-          <div className="text-center px-4 p-2">
-            <h3 className="text-xl font-bold text-white mb-2">Engineering Research & Innovation</h3>
+          <div className="text-center ">
+            <h3 className="text-lg md:text-xl font-bold text-white mb-2">Engineering Research & Innovation</h3>
             <p className="text-base text-white">Engage in innovative research projects, exploring new frontiers in computer engineering and technology.</p>
           </div>
         </div>

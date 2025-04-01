@@ -2,12 +2,12 @@ import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import AOS from 'aos';  // Import AOS
 import 'aos/dist/aos.css';  // Import AOS CSS
-import offer1Image from '../../assets/images/Power Systems & Energy Distribution.jpg';  // Import the power systems image
-import offer2Image from '../../assets/images/Electronics & Circuit Design.jpg';  // Import the electronics image
-import offer3Image from '../../assets/images/Advanced Signal Processing.jpg';  // Import the circuits image
-import offer4Image from '../../assets/images/Embedded Systems & IoT.jpg';  // Import the embedded systems image
-import offer5Image from '../../assets/images/Control Systems & Automation.jpg';  // Import the control systems image
-import offer6Image from '../../assets/images/ Core Engineering Internships & Training.jpg';  // Import the internships image
+import offer1Image from '../../assets/images/entc_off1.avif';  // Import the power systems image
+import offer2Image from '../../assets/images/entc_off2.avif';  // Import the electronics image
+import offer3Image from '../../assets/images/entc_off3.avif';  // Import the circuits image
+import offer4Image from '../../assets/images/entc_off4.avif';  // Import the embedded systems image
+import offer5Image from '../../assets//images/entc_off5.avif';  // Import the control systems image
+import offer6Image from '../../assets/images/entc_off6.avif';  // Import the internships image
 
 function EntcOfferings() {
   useEffect(() => {
@@ -38,31 +38,33 @@ function EntcOfferings() {
   }, []);
 
   return (
-    <div className="px-8 md:px-16 py-6 md:py-8 bg-[#ffffff] poppins-regular">
+    
+    <div className="px-8 md:px-16 py-6 md:py-8 bg-[#ffffff] poppins-regular overflow-hidden">
       <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 text-[#026670]" data-aos="fade-up">
         Electrical & Electronics Engineering Offerings
       </h2>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4 md:gap-x-20 z-5 justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-y-2 md:gap-y-8 gap-x-4 md:gap-x-20 z-5 justify-center">
         {/* Power Systems & Energy Distribution */}
         <div
-          className="bg-[linear-gradient(#9FEDD7,_#026670_51%,_#9FEDD7)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
+          className="bg-[linear-gradient(#9FEDD7,_#026670_51%,_#03828f)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
           data-aos="fade-up"
         >
           <img
             src={offer1Image}
             alt="Power Systems"
-            className="w-full h-48 object-cover mb-4"
+            className="w-full h-28 md:h-48 object-cover mb-4"
           />
           <div className="text-center px-4 p-2">
-            <h3 className="text-xl font-bold text-white mb-2">Power Systems & Energy Distribution</h3>
-            <p className="text-base text-white">Optimizing energy flow for residential, industrial, and commercial applications.</p>
+            <h3 className="text-xl font-bold text-white mb-2">Analog & Digital Communication</h3>
+            <p className="text-base text-white">Master signal processing & transmission! 
+</p>
           </div>
         </div>
 
         {/* Electronics & Circuit Design */}
         <div
-          className="bg-[linear-gradient(#9FEDD7,_#026670_51%,_#9FEDD7)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
+          className="bg-[linear-gradient(#9FEDD7,_#026670_51%,_#03828f)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
           data-aos="fade-up"
         >
           <img
@@ -72,13 +74,14 @@ function EntcOfferings() {
           />
           <div className="text-center px-4 p-2">
             <h3 className="text-xl font-bold text-white mb-2">Electronics & Circuit Design</h3>
-            <p className="text-base text-white">Designing efficient and functional circuits for real-world applications.</p>
+            <p className="text-base text-white">Build intelligent circuits & automation! 
+</p>
           </div>
         </div>
 
         {/* Advanced Signal Processing */}
         <div
-          className="bg-[linear-gradient(#9FEDD7,_#026670_51%,_#9FEDD7)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
+          className="bg-[linear-gradient(#9FEDD7,_#026670_51%,_#03828f)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
           data-aos="fade-up"
         >
           <img
@@ -87,14 +90,14 @@ function EntcOfferings() {
             className="w-full h-48 object-cover mb-4"
           />
           <div className="text-center px-4 p-2">
-            <h3 className="text-xl font-bold text-white mb-2">Advanced Signal Processing</h3>
-            <p className="text-base text-white">Processing complex signals for communication, radar, and more.</p>
+            <h3 className="text-xl font-bold text-white mb-2">Internet of Things (IoT)</h3>
+            <p className="text-base text-white">Connect the world with smart tech</p>
           </div>
         </div>
 
         {/* Embedded Systems & IoT */}
         <div
-          className="bg-[linear-gradient(#9FEDD7,_#026670_51%,_#9FEDD7)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
+          className="bg-[linear-gradient(#9FEDD7,_#026670_51%,_#03828f)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
           data-aos="fade-up"
         >
           <img
@@ -103,14 +106,14 @@ function EntcOfferings() {
             className="w-full h-48 object-cover mb-4"
           />
           <div className="text-center px-4 p-2">
-            <h3 className="text-xl font-bold text-white mb-2">Embedded Systems & IoT</h3>
-            <p className="text-base text-white">Developing smart, connected devices for automation and monitoring.</p>
+            <h3 className="text-xl font-bold text-white mb-2">Wireless & Mobile Communication</h3>
+            <p className="text-base text-white">Develop next-gen telecom solutions!</p>
           </div>
         </div>
 
         {/* Control Systems & Automation */}
         <div
-          className="bg-[linear-gradient(#9FEDD7,_#026670_51%,_#9FEDD7)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
+          className="bg-[linear-gradient(#9FEDD7,_#026670_51%,_#03828f)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
           data-aos="fade-up"
         >
           <img
@@ -119,14 +122,15 @@ function EntcOfferings() {
             className="w-full h-48 object-cover mb-4"
           />
           <div className="text-center px-4 p-2">
-            <h3 className="text-xl font-bold text-white mb-2">Control Systems & Automation</h3>
-            <p className="text-base text-white">Innovative systems for automatic control and process optimization.</p>
+            <h3 className="text-xl font-bold text-white mb-2">VLSI & FPGA Design</h3>
+            <p className="text-base text-white">Dive into chip design & nanoelectronics! 
+</p>
           </div>
         </div>
 
         {/* Core Engineering Internships and Industrial Training */}
         <div
-          className="bg-[linear-gradient(#9FEDD7,_#026670_51%,_#9FEDD7)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
+          className="bg-[linear-gradient(#9FEDD7,_#026670_51%,_#03828f)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
           data-aos="fade-up"
         >
           <img
@@ -135,8 +139,9 @@ function EntcOfferings() {
             className="w-full h-48 object-cover mb-4"
           />
           <div className="text-center px-4 p-2">
-            <h3 className="text-xl font-bold text-white mb-2">Core Engineering Internships & Training</h3>
-            <p className="text-base text-white">Gain valuable industry exposure through hands-on internships and training.</p>
+            <h3 className="text-xl font-bold text-white mb-2">Optical & Satellite Communication</h3>
+            <p className="text-base text-white">Explore futuristic networking tech!  
+</p>
           </div>
         </div>
       </div>

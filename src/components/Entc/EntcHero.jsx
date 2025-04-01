@@ -1,5 +1,5 @@
 import React from 'react';
-import bgImage from '../../assets/images/entc-bg.jpg'; // Adjust the path to your background image
+import bgImage from '../../assets/images/entc-bg.avif'; // Adjust the path to your background image
 
 function EntcHero() {
   return (
@@ -11,39 +11,41 @@ function EntcHero() {
           backgroundImage: `url(${bgImage})`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
-          transform: 'rotate(180deg)', // Apply rotation only to the background
-          transformOrigin: 'center', // Make sure the rotation is centered
+          transform: 'rotate(180deg)',
+          transformOrigin: 'center',
         }}
       ></div>
 
       {/* Black Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div> {/* Increased opacity of black overlay for better contrast */}
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
 
-      {/* Content (Form and Heading) */}
-      <div className="relative z-10 flex justify-between h-full">
-
-        {/* Left side: Heading (Aligned to Top) */}
-        <div className="w-1/2 flex flex-col items-start pt-10">
-          <h1 className="text-5xl text-white text-left pl-10 leading-normal">
-            Shape the Future of Technology with <span className='text-[#9FEDD7]'>Electronics and Telecommunication Engineering</span> at ICEM
+      {/* Content Container */}
+      <div className="relative z-10 flex flex-col md:flex-row justify-between items-center h-full p-4 md:px-16 md:py-8">
+        {/* Left Side: Text Content (Hidden only on mobile) */}
+        <div className=" sm:flex w-full md:w-1/2 flex-col justify-center text-left">
+          <h1 className="text-2xl md:text-5xl text-white font-bold leading-tight mb-4">
+            ENTC Engineering at Indira College of Engineering & Management
           </h1>
-          <p className="text-3xl text-white pl-10 mt-8 leading-10">
-            Advanced labs, expert faculty, and exceptional career opportunities await you.
+          <p className="hidden sm:flex text-lg md:text-3xl text-white leading-relaxed mb-2">
+            30 Years of Excellence in Education | 5 Specializations | 100% Placement Assistance
+          </p>
+          <p className="hidden sm:flex text-md md:text-2xl text-white leading-relaxed">
+            ENTC at ICEM - Powering the Future with Electronics & Telecommunication!
           </p>
         </div>
 
-        {/* Right side: Form (Vertically Centered) */}
-        <div className="w-1/2 flex justify-center items-center">
+        {/* Form Section with Responsive Padding */}
+        <div className="w-full md:w-1/2 flex justify-center items-center">
           <div
-            className="p-6 max-w-md w-full shadow-md rounded-lg"
-            style={{ backgroundColor: "rgba(2, 103, 112, 0.7)" }} // Applying a more opaque deep teal background
+            className="p-4 md:p-6 w-full max-w-md bg-opacity-70 rounded-lg shadow-md"
+            style={{ backgroundColor: "rgba(2, 103, 112, 0.7)" }}
           >
             <form className="space-y-4">
               <div>
                 <input
                   type="text"
                   id="name"
-                  className="w-full p-1.5 bg-white text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
+                  className="w-full p-2 bg-white text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
                   placeholder="Enter your name"
                   required
                 />
@@ -52,7 +54,7 @@ function EntcHero() {
                 <input
                   type="email"
                   id="email"
-                  className="w-full p-1.5 bg-white text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
+                  className="w-full p-2 bg-white text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
                   placeholder="Enter your email"
                   required
                 />
@@ -61,7 +63,7 @@ function EntcHero() {
                 <input
                   type="tel"
                   id="mobile"
-                  className="w-full p-1.5 bg-white text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
+                  className="w-full p-2 bg-white text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
                   placeholder="Enter your mobile number"
                   required
                 />
@@ -69,28 +71,25 @@ function EntcHero() {
               <div>
                 <select
                   id="state"
-                  className="w-full p-1.5 bg-white text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
+                  className="w-full p-2 bg-white text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
                   required
                 >
                   <option value="">Select State</option>
-                  {/* Add state options here */}
                 </select>
               </div>
               <div>
                 <select
                   id="city"
-                  className="w-full p-1.5 bg-white text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
+                  className="w-full p-2 bg-white text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
                   required
                 >
                   <option value="">Select City</option>
-                  {/* Add city options here */}
                 </select>
               </div>
-              
               <div>
                 <select
                   id="course"
-                  className="w-full p-1.5 bg-white text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
+                  className="w-full p-2 bg-white text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
                   required
                 >
                   <option value="">Select Course</option>
@@ -104,18 +103,17 @@ function EntcHero() {
               <div>
                 <select
                   id="program"
-                  className="w-full p-1.5 bg-white text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
+                  className="w-full p-2 bg-white text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
                   required
                 >
                   <option value="">Select Program</option>
-                  {/* Add program options here */}
                 </select>
               </div>
               <div>
                 <input
                   type="number"
                   id="cet-score"
-                  className="w-full p-1.5 bg-white text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
+                  className="w-full p-2 bg-white text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
                   placeholder="Enter CET Score"
                 />
               </div>
